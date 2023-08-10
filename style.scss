@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: 'Borel', cursive;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    text-align: center;
+    font-size: 15rem;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    z-index: -1;
+    color: rgb(130, 188, 250);
+    opacity: .1;
+    transform: translate(-50%, -50%);
+    content: 'Subodh Khanal';
+  }
+}
