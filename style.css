@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Borel&family=Ubuntu:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&family=Red+Hat+Display:wght@500&display=swap");
 *,
 *::before,
 *::after {
@@ -12,52 +12,122 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  background-image: linear-gradient(-45deg, #ffffff, #d6e3ff);
+}
+
 .container {
   width: min(900px, 100vw - 2rem);
   margin: 0 auto;
 }
 
-header {
+.page-header {
+  z-index: 1;
   top: 0;
   position: sticky;
   padding: 0.5em 0;
   background-color: black;
   color: #fff;
 }
-header .container {
+.page-header .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-header .logo {
-  width: 3em;
+.page-header .logo {
+  background-color: #fff;
+  width: 2em;
   aspect-ratio: 1;
   overflow: hidden;
 }
-header .logo img {
-  border-radius: 50%;
+.page-header .logo img {
   width: 100%;
 }
-header nav {
+.page-header nav {
   margin-left: 2rem;
   margin-right: auto;
 }
-header nav ul {
+.page-header nav ul {
   list-style: none;
   display: flex;
   align-items: center;
   gap: 2em;
 }
-header nav ul a {
+.page-header nav ul a {
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
 }
-header button {
+.page-header .resume-link {
   padding: 1ch 2ch;
-  font-size: 0.75em;
+  font-size: 0.9em;
+  display: inline-block;
+  border: none;
+  background-color: #fc4242;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 0.125em;
 }
 
-.section {
-  text-align: center;
+section {
+  padding: 4rem 0;
+}
+section header {
+  font-size: 3em;
+}
+
+section#about {
+  perspective: 240px;
+  padding: 10rem 0;
+}
+section#about .container {
+  display: flex;
+  align-items: center;
+}
+section#about .photo {
+  width: 20rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0.5em;
+  transform: perspective(800px) rotateY(15deg);
+  transition: transform 1s ease 0s;
+  box-shadow: rgba(0, 0, 0, 0.024) 0px 0px 0px 1px, rgba(0, 0, 0, 0.05) 0px 1px 0px 0px, rgba(0, 0, 0, 0.03) 0px 0px 8px 0px, rgba(0, 0, 0, 0.1) 0px 20px 30px 0px;
+}
+section#about .photo:hover {
+  transform: perspective(800px) rotateY(12deg);
+}
+section#about .intro-container {
+  margin-left: 2rem;
+}
+section#about .intro-container .greeting {
+  font-size: 2em;
+  color: #e47c7c;
+}
+section#about .intro-container .name {
+  font-weight: bold;
+  font-size: 3rem;
+  font-family: "Red Hat Display", sans-serif;
+}
+section#about .intro-container .intro {
+  margin-top: 2em;
+  line-height: 1.5;
+}
+section#about .intro-container .intro span {
+  font-weight: 600;
+  color: #e47c7c;
+}
+section#about .intro-container p {
+  margin-top: 3em;
+  font-size: 0.8em;
+}
+section#about .intro-container a {
+  display: inline-block;
+  margin-top: 0.5em;
+  border: none;
+  padding: 1ch 5ch;
+  background-color: #fc4242;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 0.125em;
+  font-size: 1.2rem;
 }/*# sourceMappingURL=style.css.map */

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Borel&family=Ubuntu:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&family=Red+Hat+Display:wght@500&display=swap');
 
 *,
 *::before,
@@ -13,14 +13,17 @@ html {
   scroll-behavior: smooth;
 }
 
-body {}
+body {
+  background-image: linear-gradient(-45deg, #ffffff, #d6e3ff);
+}
 
 .container {
   width: min(900px, calc(100vw - 2rem));
   margin: 0 auto;
 }
 
-header {
+.page-header {
+  z-index: 1;
   top: 0;
   position: sticky;
   padding: .5em 0;
@@ -34,12 +37,12 @@ header {
   }
 
   .logo {
-    width: 3em;
+    background-color: #fff;
+    width: 2em;
     aspect-ratio: 1;
     overflow: hidden;
 
     img {
-      border-radius: 50%;
       width: 100%;
     }
   }
@@ -62,13 +65,98 @@ header {
     }
   }
 
-  button {
+  .resume-link {
     padding: 1ch 2ch;
-    font-size: .75em;
+    font-size: .9em;
+    display: inline-block;
+    // margin-top: .5em;
+    border: none;
+    background-color: #fc4242;
+    color: #fff;
+    text-decoration: none;
+    border-radius: .125em;
+    // font-size: 1.2rem;
   }
 
 }
 
-.section {
-  text-align: center;
+section {
+  padding: 4rem 0;
+
+  & header {
+    font-size: 3em;
+  }
 }
+
+section#about {
+  -webkit-perspective: 240px;
+  perspective: 240px;
+  padding: 10rem 0;
+
+  .container {
+    display: flex;
+    align-items: center;
+  }
+
+  .photo {
+    width: 20rem;
+    object-fit: cover;
+    border-radius: .5em;
+    transform:
+      perspective(800px) rotateY(15deg);
+    transition: transform 1s ease 0s;
+    box-shadow:
+      rgba(0, 0, 0, 0.024) 0px 0px 0px 1px,
+      rgba(0, 0, 0, 0.05) 0px 1px 0px 0px,
+      rgba(0, 0, 0, 0.03) 0px 0px 8px 0px,
+      rgba(0, 0, 0, 0.1) 0px 20px 30px 0px;
+
+    &:hover {
+      transform: perspective(800px) rotateY(12deg);
+    }
+  }
+
+  .intro-container {
+    margin-left: 2rem;
+
+    .greeting {
+      font-size: 2em;
+      color: #e47c7c
+    }
+
+    .name {
+      font-weight: bold;
+      font-size: 3rem;
+      font-family: 'Red Hat Display', sans-serif;
+    }
+
+    .intro {
+      margin-top: 2em;
+      line-height: 1.5;
+
+      span {
+        font-weight: 600;
+        color: #e47c7c
+      }
+    }
+
+    p {
+      margin-top: 3em;
+      font-size: .8em;
+    }
+
+    a {
+      display: inline-block;
+      margin-top: .5em;
+      border: none;
+      padding: 1ch 5ch;
+      background-color: #fc4242;
+      color: #fff;
+      text-decoration: none;
+      border-radius: .125em;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+section#experience {}
