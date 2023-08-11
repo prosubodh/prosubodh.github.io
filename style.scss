@@ -176,7 +176,8 @@ section#experience {
     &::before {
       position: absolute;
       content: '';
-      width: 2px;
+      width: 3px;
+      border-left: 1px solid var(--light-color);
       height: 100%;
       background: var(--accent-color-2);
       left: 50%;
@@ -199,6 +200,7 @@ section#experience {
         content: '';
         width: 50%;
         height: 2px;
+        border-top: 1px solid var(--light-color);
         left: 0;
         transform: translateY(20px);
         z-index: -1;
@@ -216,6 +218,8 @@ section#experience {
         place-content: center;
         border: 2px solid var(--light-color);
         text-align: center;
+        color: var(--light-color);
+        font-weight: 700;
       }
 
       &.left {
