@@ -78,7 +78,7 @@ section header {
 
 section#about {
   perspective: 240px;
-  padding: 10rem 0;
+  padding: 15rem 0;
 }
 section#about .container {
   display: flex;
@@ -130,4 +130,73 @@ section#about .intro-container a {
   text-decoration: none;
   border-radius: 0.125em;
   font-size: 1.2rem;
+}
+
+section#experience ul {
+  margin-top: 6rem;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: relative;
+}
+section#experience ul::before {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 100%;
+  background: #ffb6b6;
+  left: 50%;
+  transform: translateX(-50%);
+}
+section#experience ul li {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+section#experience ul li::before {
+  position: absolute;
+  content: "";
+  width: 50%;
+  height: 2px;
+  background-color: #ffb6b6;
+  left: 0;
+  transform: translateY(20px);
+  z-index: -1;
+}
+section#experience ul li::after {
+  position: absolute;
+  content: attr(data-joined);
+  width: 40px;
+  aspect-ratio: 1;
+  left: 50%;
+  transform: translate(-50%, -72px);
+  background: #eff4ff;
+  border-radius: 50%;
+  font-size: 0.7em;
+  display: grid;
+  place-content: center;
+  border: 2px solid #ffb6b6;
+  text-align: center;
+}
+section#experience ul li.left {
+  align-self: flex-start;
+  text-align: right;
+}
+section#experience ul li.right {
+  align-self: flex-end;
+}
+section#experience ul li.right::before {
+  left: 50%;
+}
+section#experience ul li .role {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+section#experience ul li .company {
+  color: #666;
+}
+section#experience ul li .duration {
+  margin-top: 1em;
+  font-size: 0.9em;
 }/*# sourceMappingURL=style.css.map */
