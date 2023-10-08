@@ -12,8 +12,9 @@
   --primary-color: #fc4242;
   --accent-color-1: #e47c7c;
   --accent-color-2: #ffb6b6;
-  --dark-color: #000;
-  --light-color: #fff;
+  --accent-color-3: #d6e3ff;
+  --dark-color: #000000;
+  --light-color: #ffffff;
 }
 
 html {
@@ -21,7 +22,7 @@ html {
 }
 
 body {
-  background-image: linear-gradient(-45deg, #ffffff, #d6e3ff);
+  background-image: linear-gradient(-45deg, var(--light-color), var(--accent-color-3));
 }
 
 .container {
