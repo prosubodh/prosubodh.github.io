@@ -213,4 +213,117 @@ section#experience ul li .company {
 section#experience ul li .duration {
   margin-top: 1em;
   font-size: 0.9em;
-}/*# sourceMappingURL=style.css.map */
+}
+
+@media (max-width: 768px) {
+  section#experience ul {
+    flex-direction: column;
+  }
+
+  section#experience ul::before {
+    left: 1rem; /* Adjust to position the line on the left */
+    transform: translateX(0);
+  }
+
+  section#experience ul li.left,
+  section#experience ul li.right {
+    align-self: stretch; /* Make items take full width */
+    text-align: left; /* Align text to the left */
+    width: calc(100% - 2rem); /* Adjust width to account for line position */
+    margin-left: 2rem; /* Add margin to make space for the line */
+  }
+
+  section#experience ul li::before {
+    display: none; /* Remove horizontal lines */
+  }
+
+  section#experience ul li::after {
+    left: -0.5rem; /* Adjust to align with the new line position */
+    transform: translateX(-100%); /* Adjust for proper alignment */
+    top: 1rem; /* Adjust vertical position */
+  }
+  
+  section#experience ul li.right::before {
+    left: 0; /* Reset specific alignment for right items */
+  }
+}
+
+@media (max-width: 768px) {
+  /* Header and Navigation */
+  .page-header .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .page-header nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 1em; /* Adjust gap for vertical layout */
+    margin-top: 1rem; /* Add some space above the nav links */
+  }
+
+  .page-header .resume-link {
+    margin-top: 1rem; /* Add space above the resume link */
+  }
+
+  /* About Section */
+  section#about .container {
+    flex-direction: column;
+    text-align: center; /* Center text content */
+  }
+
+  section#about .photo {
+    max-width: 20rem;
+    width: 80%; /* Make photo responsive */
+    margin-bottom: 2rem; /* Add space below the photo */
+    transform: perspective(800px) rotateY(0deg); /* Reset rotation for smaller screens */
+  }
+  
+  section#about .photo:hover {
+    transform: perspective(800px) rotateY(0deg); /* Reset hover rotation */
+  }
+
+  section#about .intro-container {
+    margin-left: 0; /* Remove left margin */
+    align-items: center; /* Center items in intro container */
+  }
+  
+  section#about .intro-container .name,
+  section#about .intro-container .greeting {
+    text-align: center;
+  }
+
+
+  /* General Section Adjustments */
+  section {
+    padding: 4rem 0; /* Reduce padding for sections */
+  }
+
+  section#about {
+    padding: 6rem 0; /* Reduce padding for about section */
+  }
+
+  section header {
+    font-size: 2.5em; /* Reduce header font size */
+  }
+  
+  /* Container Adjustments */
+  .container {
+    width: min(960px, 100vw - 2rem); /* Adjust padding for very small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  section header {
+    font-size: 2em; /* Further reduce header font size for very small screens */
+  }
+
+  section#about .intro-container .name {
+    font-size: 2.5rem; /* Adjust name font size */
+  }
+  
+  .page-header nav ul a {
+    font-size: 0.9em; /* Adjust nav link font size */
+  }
+}
+/*# sourceMappingURL=style.css.map */
