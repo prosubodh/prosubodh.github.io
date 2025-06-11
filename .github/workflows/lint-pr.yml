@@ -1,0 +1,98 @@
+name: Lint PR
+
+on:
+  pull_request_target:
+    types: [opened, edited, synchronize]
+
+jobs:
+  lint-pr:
+    name: Validate PR Details
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Go
+        uses: actions/setup-go@v4
+        with:
+          go-version: '1.21'
+          cache: true
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y jq
+          go install github.com/cli/cli/v2/cmd/gh@latest
+          echo "$HOME/go/bin" >> $GITHUB_PATH
+
+      - name: Validate PR details
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          echo "🔍 Validating PR..."
+
+          # Get PR data
+          PR_DATA=$(gh pr view ${{ github.event.pull_request.number }} --json title,body,headRefName,commits)
+          if [ $? -ne 0 ]; then
+            echo "::error ::Failed to fetch PR data"
+            exit 1
+          fi
+
+          BRANCH_NAME=$(echo "$PR_DATA" | jq -r .headRefName)
+          PR_BODY=$(echo "$PR_DATA" | jq -r .body)
+          COMMITS=$(echo "$PR_DATA" | jq -r '.commits[].message' | grep -v '^$')
+
+          echo "Branch: $BRANCH_NAME"
+          echo "PR Body Preview: ${PR_BODY:0:100}..."
+
+          # Initialize error tracking
+          ERROR_COUNT=0
+          WARNING_COUNT=0
+
+          # 1. Validate branch name pattern
+          if [[ ! "$BRANCH_NAME" =~ ^users\/[a-z]+\.[a-z]+\/(feat|fix|docs|style|refactor|test|chore)\/[a-z0-9._-]+$ ]]; then
+            echo "::error ::❌ Branch name \"$BRANCH_NAME\" does not follow pattern: 'users/firstname.lastname/type/task-name'"
+            echo "::notice ::Valid types: feat|fix|docs|style|refactor|test|chore"
+            ((ERROR_COUNT++))
+          fi
+
+          # 2. Validate commit messages
+          if [[ -z "$COMMITS" ]]; then
+            echo "::error ::❌ No commits found in the PR"
+            ((ERROR_COUNT++))
+          else
+            while IFS= read -r commit; do
+              if [[ ! "$commit" =~ ^[A-Z] ]]; then
+                echo "::error ::❌ Commit message must start with uppercase: \"$commit\""
+                ((ERROR_COUNT++))
+              fi
+              if [[ "$commit" =~ \.$ ]]; then
+                echo "::warning ::ℹ️ Commit message should not end with period: \"$commit\""
+                ((WARNING_COUNT++))
+              fi
+            done <<< "$COMMITS"
+          fi
+
+          # 3. Validate PR description
+          if [[ -z "$PR_BODY" || "$PR_BODY" == "null" ]]; then
+            echo "::error ::❌ PR description is required"
+            echo "::notice ::Please include: Purpose, Changes, Testing, Screenshots (if applicable)"
+            ((ERROR_COUNT++))
+          elif [[ $(echo "$PR_BODY" | wc -w) -lt 15 ]]; then
+            echo "::warning ::⚠️ PR description seems brief (minimum 15 words recommended)"
+            ((WARNING_COUNT++))
+          fi
+
+          # Final result
+          if [ $ERROR_COUNT -gt 0 ]; then
+            echo "::error ::❌ Validation failed with $ERROR_COUNT error(s) and $WARNING_COUNT warning(s)"
+            exit 1
+          else
+            echo "✅ All checks passed with $WARNING_COUNT warning(s)"
+          fi
