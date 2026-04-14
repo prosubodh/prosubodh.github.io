@@ -31,7 +31,12 @@
           <li><a href="#projects">Projects</a></li>
         </ul>
       </nav>
-      <a href="https://github.com/prosubodh" target="_blank" class="btn primary-btn">GitHub</a>
+      <div style="display: flex; align-items: center;">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">
+          <span id="theme-icon">☀️</span>
+        </button>
+        <a href="https://github.com/prosubodh" target="_blank" class="btn primary-btn">GitHub</a>
+      </div>
     </div>
   </header>
 
@@ -203,6 +208,27 @@
           behavior: 'smooth'
         });
       });
+    });
+
+    // Theme Toggle Logic
+    const themeToggle = document.getElementById('theme-toggle');
+    const themeIcon = document.getElementById('theme-icon');
+    
+    const currentTheme = localStorage.getItem('theme');
+    if (currentTheme === 'light') {
+      document.body.classList.add('light-theme');
+      themeIcon.textContent = '🌙';
+    }
+
+    themeToggle.addEventListener('click', () => {
+      document.body.classList.toggle('light-theme');
+      if (document.body.classList.contains('light-theme')) {
+        localStorage.setItem('theme', 'light');
+        themeIcon.textContent = '🌙';
+      } else {
+        localStorage.setItem('theme', 'dark');
+        themeIcon.textContent = '☀️';
+      }
     });
   </script>
 </body>

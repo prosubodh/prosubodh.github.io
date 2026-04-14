@@ -56,10 +56,45 @@
       border-radius: 4px;
       font-size: 0.9em;
     }
-    button.print-btn {
+    body.dark-theme {
+      background-color: #0b0f19;
+      color: #f0f2f5;
+    }
+    body.dark-theme h1 {
+      border-color: #f0f2f5;
+    }
+    body.dark-theme h2, 
+    body.dark-theme h3 {
+      color: #f0f2f5;
+      border-color: #333;
+    }
+    body.dark-theme .contact-info, 
+    body.dark-theme .date {
+      color: #a0aab2;
+    }
+    body.dark-theme .skills-list span {
+      background: #1f2937;
+      color: #6ee7b7;
+    }
+    .top-actions {
       position: fixed;
       top: 20px;
       right: 20px;
+      display: flex;
+      gap: 15px;
+      align-items: center;
+    }
+    button.theme-toggle {
+      background: transparent;
+      border: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+    button.theme-toggle:hover {
+      transform: scale(1.1);
+    }
+    button.print-btn {
       background: #3b82f6;
       color: white;
       border: none;
@@ -72,17 +107,28 @@
       background: #2563eb;
     }
     @media print {
-      button.print-btn {
-        display: none;
+      .top-actions {
+        display: none !important;
       }
-      body {
-        padding: 0;
+      body, body.dark-theme {
+        background-color: white !important;
+        color: #333 !important;
+        padding: 0 !important;
       }
+      body.dark-theme h1 { border-color: #333 !important; color: #333 !important; }
+      body.dark-theme h2, body.dark-theme h3 { color: #2c3e50 !important; border-color: #ccc !important; }
+      body.dark-theme .contact-info, body.dark-theme .date { color: #666 !important; }
+      body.dark-theme .skills-list span { background: #eee !important; color: #333 !important; }
     }
   </style>
 </head>
 <body>
-  <button class="print-btn" onclick="window.print()">Print / Save PDF</button>
+  <div class="top-actions">
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">
+      <span id="theme-icon">🌙</span>
+    </button>
+    <button class="print-btn" onclick="window.print()">Print / Save PDF</button>
+  </div>
 
   <h1>Subodh Khanal</h1>
   <div class="contact-info">
@@ -165,5 +211,29 @@
   <p><strong>Business Computing and Information Systems</strong><br>
   University of Central Lancashire, Kathmandu, Nepal</p>
 
+  <script>
+    const themeToggle = document.getElementById('theme-toggle');
+    const themeIcon = document.getElementById('theme-icon');
+    
+    // Check local storage for theme
+    // Note: portfolio is dark by default, resume is light by default
+    // We will sync with local storage if possible
+    const currentTheme = localStorage.getItem('theme');
+    if (currentTheme === 'dark') {
+      document.body.classList.add('dark-theme');
+      themeIcon.textContent = '☀️';
+    }
+
+    themeToggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark-theme');
+      if (document.body.classList.contains('dark-theme')) {
+        localStorage.setItem('theme', 'dark');
+        themeIcon.textContent = '☀️';
+      } else {
+        localStorage.setItem('theme', 'light');
+        themeIcon.textContent = '🌙';
+      }
+    });
+  </script>
 </body>
 </html>

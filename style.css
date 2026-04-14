@@ -9,6 +9,15 @@
   --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 
+body.light-theme {
+  --bg-color: #f9fafb;
+  --text-primary: #111827;
+  --text-secondary: #4b5563;
+  --glass-bg: rgba(255, 255, 255, 0.7);
+  --glass-border: rgba(0, 0, 0, 0.1);
+  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -127,6 +136,23 @@ body {
 
 .nav-links a:hover {
   color: var(--primary-accent);
+}
+
+.theme-toggle {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  margin-right: 15px;
+  transition: transform 0.3s;
+}
+
+.theme-toggle:hover {
+  transform: scale(1.1);
 }
 
 /* Buttons */
