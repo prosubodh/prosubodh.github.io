@@ -1,104 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="images/LOGO.ico" type="image/x-icon">
-  <title>Subodh Khanal | Music Maker</title>
+  <meta name="description" content="Subodh Khanal - Senior Software Engineer Portfolio. 9+ years of experience in full-stack web development.">
+  <title>Subodh Khanal | Senior Software Engineer</title>
+  
+  <!-- Modern Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+  
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <header class="page-header">
-    <div class="container">
-      <a href="#" class="logo"><img src="images/LOGO.svg" alt=""></a>
+  <!-- Background Glow Effects -->
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  
+  <header class="glass-header">
+    <div class="container nav-container">
+      <a href="#" class="logo">
+        <span class="logo-text">SK</span>
+      </a>
       <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="#music">Music</a></li>
         </ul>
       </nav>
-      <a href="#" class="resume-link button-style">Download Résumé</a>
+      <a href="https://github.com/prosubodh" target="_blank" class="btn primary-btn">GitHub</a>
     </div>
   </header>
-  <section id="about">
-    <div class="container">
-      <img src="images/photo.jpg" alt="" class="photo">
-      <div class="intro-container">
-        <div class="name">Subodh Khanal</div>
-        <div class="intro">An experienced <span>Software Engineer</span> from <span>Nepal</span>, specializing in the development of full-stack enterprise solutions.</div>
-        <p>Looking for a software engineer?
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-content">
+        <h1 class="hero-title">
+          Hi, I'm <br/>
+          <span class="gradient-text">Subodh Khanal</span>
+        </h1>
+        <p class="hero-subtitle">
+          Senior Software Engineer specializing in scalable, full-stack enterprise solutions with over 9 years of experience.
         </p>
-        <a href="#" class="button button-style">Let's connect</a>
-      </div>
-    </div>
-    </div>
-  </section>
-
-  <section id="experience">
-    <div class="container">
-      <header>Work Experience</header>
-      <ul>
-        <li class="right" data-joined="Apr 2023">
-          <div class="role">Senior Software Engineer</div>
-          <div class="company">UBA Solutions Pvt. Ltd.</div>
-          <div class="duration">2 months</div>
-        </li>
-        <li class="left" data-joined="Feb 2021">
-          <div class="role">Senior Software Engineer</div>
-          <div class="company">Leapfrog Technologies</div>
-          <div class="duration">2 years 2 months</div>
-        </li>
-        <li class="right" data-joined="Aug 2016">
-          <div class="role">Software Engineer</div>
-          <div class="company">Pioneer Solutions</div>
-          <div class="duration">4 years 6 months</div>
-        </li>
-        <li class="left" data-joined="May 2015">
-          <div class="role">Software Developer</div>
-          <div class="company">NCCS Software</div>
-          <div class="duration">1 years 2 months</div>
-        </li>
-      </ul>
-    </div>
-  </section>
-
-  <section id="projects">
-    <div class="container">
-      <header>Projects</header>
-      <div class="projects-grid">
-        <div class="project-item">
-          <img src="https://placehold.co/600x400" alt="Placeholder image for Project Alpha">
-          <h3>Project Alpha</h3>
-          <p>A brief description of Project Alpha and its purpose.</p>
-          <p>Technologies: Python, Django, React</p>
-        </div>
-        <div class="project-item">
-          <img src="https://placehold.co/600x400" alt="Placeholder image for Project Beta">
-          <h3>Project Beta</h3>
-          <p>A brief description of Project Beta and its purpose.</p>
-          <p>Technologies: Node.js, Express, Vue.js</p>
-        </div>
-        <div class="project-item">
-          <img src="https://placehold.co/600x400" alt="Placeholder image for Project Gamma">
-          <h3>Project Gamma</h3>
-          <p>A brief description of Project Gamma and its purpose.</p>
-          <p>Technologies: Java, Spring Boot, Angular.</p>
+        <div class="hero-actions">
+          <a href="#experience" class="btn primary-btn">View Experience</a>
+          <a href="#about" class="btn secondary-btn">About Me</a>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <footer>
-    <div class="container">
-      <p>&copy; <span id="current-year"></span> Subodh Khanal. All rights reserved.</p>
+    <section id="about" class="about">
+      <div class="container">
+        <div class="about-grid glass-card">
+          <div class="about-text">
+            <h2>About Me</h2>
+            <p>
+              I am a results-driven professional with a BCIS degree and extensive experience in development, deployment, and database management. I thrive in agile environments, working alongside cross-functional teams to deliver robust software architectures.
+            </p>
+            <div class="skills-grid">
+              <span class="skill-tag">React / Next.js</span>
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">TypeScript / JS</span>
+              <span class="skill-tag">C# / .NET</span>
+              <span class="skill-tag">PHP</span>
+              <span class="skill-tag">PostgreSQL / SQL</span>
+              <span class="skill-tag">MongoDB</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="experience">
+      <div class="container">
+        <h2 class="section-title">Work Experience</h2>
+        <div class="timeline">
+          
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass-card">
+              <h3>Senior Software Engineer & Consultant</h3>
+              <h4>Cyberensic (Remote)</h4>
+              <span class="date">Jun 2023 – Present</span>
+              <p>Leading the development of a Governance Risk & Compliance (GRC) platform using React, Node.js, and PostgreSQL. Conducting code reviews and providing secure web architectures.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass-card">
+              <h3>Senior Software Engineer</h3>
+              <h4>UBA Solution (Lalitpur, Nepal)</h4>
+              <span class="date">Apr 2023 – May 2023</span>
+              <p>Planned and resolved system bugs, participated in Scrum ceremonies, and wrote unit tests for robust code quality and system reliability.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass-card">
+              <h3>Senior Software Engineer</h3>
+              <h4>Leapfrog Technology (Kathmandu, Nepal)</h4>
+              <span class="date">Feb 2021 – Mar 2023</span>
+              <p>Designed and maintained high-availability enterprise applications. Managed migration of MS Power Platform apps to separate services and conducted performance optimizations.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass-card">
+              <h3>Software Engineer</h3>
+              <h4>Pioneer Solutions (Kathmandu, Nepal)</h4>
+              <span class="date">Aug 2016 – Jan 2021</span>
+              <p>Developed comprehensive UI and extensive DB structures. Implemented complex stored procedures and improved overall system stability.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass-card">
+              <h3>Software Developer</h3>
+              <h4>NCCS Software (Kathmandu, Nepal)</h4>
+              <span class="date">May 2015 – Jun 2016</span>
+              <p>Specialized in HTML, CSS, JavaScript, PHP, and MySQL. Managed Drupal projects focusing on custom module and entity development.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2 class="section-title">Selected Projects</h2>
+        <div class="projects-grid">
+          
+          <div class="project-card glass-card">
+            <div class="project-content">
+              <h3>GRC Enterprise Platform</h3>
+              <p>A comprehensive risk and compliance management solution designed for internal enterprise auditing and tracking.</p>
+              <div class="project-tech">
+                <span>React</span>
+                <span>Node.js</span>
+                <span>PostgreSQL</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card glass-card">
+            <div class="project-content">
+              <h3>High Availability App Migration</h3>
+              <p>Migrated existing legacy modules from Microsoft Power Platform into modern, scalable microservices.</p>
+              <div class="project-tech">
+                <span>C#</span>
+                <span>SQL Server</span>
+                <span>TypeScript</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card glass-card">
+            <div class="project-content">
+              <h3>E-Commerce Dashboard</h3>
+              <p>A dynamic analytical dashboard for tracking inventory, sales, and predictive restocks using modern JS frameworks.</p>
+              <div class="project-tech">
+                <span>Next.js</span>
+                <span>MongoDB</span>
+                <span>Tailwind</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="glass-footer">
+    <div class="container footer-content">
+      <p>&copy; <span id="current-year"></span> Subodh Khanal. Crafted with passion.</p>
+      <div class="social-links">
+        <a href="https://github.com/prosubodh" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/prosubodh" target="_blank">LinkedIn</a>
+      </div>
     </div>
   </footer>
-  <script>document.getElementById("current-year").textContent = new Date().getFullYear();</script>
-</body>
 
+  <script>
+    document.getElementById("current-year").textContent = new Date().getFullYear();
+    
+    // Smooth scrolling for navigation
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
 </html>
