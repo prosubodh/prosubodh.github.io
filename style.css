@@ -7,6 +7,7 @@
   --glass-bg: rgba(255, 255, 255, 0.05);
   --glass-border: rgba(255, 255, 255, 0.1);
   --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  --header-footer-bg: rgba(11, 15, 25, 0.7);
 }
 
 body.light-theme {
@@ -16,6 +17,7 @@ body.light-theme {
   --glass-bg: rgba(255, 255, 255, 0.7);
   --glass-border: rgba(0, 0, 0, 0.1);
   --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
+  --header-footer-bg: rgba(255, 255, 255, 0.7);
 }
 
 * {
@@ -82,7 +84,7 @@ body {
   top: 0;
   width: 100%;
   z-index: 100;
-  background: rgba(11, 15, 25, 0.7);
+  background: var(--header-footer-bg);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border-bottom: 1px solid var(--glass-border);
@@ -349,7 +351,7 @@ section {
 
 /* Footer */
 .glass-footer {
-  background: rgba(11, 15, 25, 0.7);
+  background: var(--header-footer-bg);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border-top: 1px solid var(--glass-border);
