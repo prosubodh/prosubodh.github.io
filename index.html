@@ -3,29 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Subodh Khanal - Software Development Lead Portfolio. 11+ years of experience in full-stack web development.">
+  <meta name="description" content="Subodh Khanal - Software Development Lead Portfolio. 11+ years of experience in scaleable, full-stack enterprise solutions.">
   <title>Subodh Khanal | Software Development Lead</title>
   
   <!-- Modern Typography -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;800&display=swap" rel="stylesheet">
   
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Background Glow Effects -->
-  <div class="blob blob-1"></div>
-  <div class="blob blob-2"></div>
+  <!-- Ambient Effects -->
+  <div class="bg-mesh"></div>
+  <div class="noise-overlay"></div>
   
   <header class="glass-header">
     <div class="container nav-container">
-      <a href="#" class="logo">
-        <span class="logo-text">SK</span>
+      <a href="#" class="logo-text">
+        sk<span class="logo-dot">.</span>
       </a>
       <nav>
         <ul class="nav-links">
-          <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
@@ -33,7 +32,8 @@
       </nav>
       <div style="display: flex; align-items: center;">
         <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">
-          <span id="theme-icon">☀️</span>
+          <svg id="theme-icon-light" style="display:none;" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          <svg id="theme-icon-dark" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
         </button>
         <a href="https://github.com/prosubodh" target="_blank" class="btn primary-btn">GitHub</a>
       </div>
@@ -41,40 +41,56 @@
   </header>
 
   <main>
-    <section id="home" class="hero">
-      <div class="container hero-content">
+    <section id="home" class="hero container">
+      <div class="hero-content">
+        <div class="hero-badge">Available for new opportunities</div>
         <h1 class="hero-title">
           Hi, I'm <br/>
           <span class="gradient-text">Subodh Khanal</span>
         </h1>
         <p class="hero-subtitle">
-          Software Development Lead specializing in scalable, full-stack enterprise solutions with over 11 years of experience.
+          Software Development Lead specializing in building scalable, robust full-stack enterprise architectures with over 11 years of experience.
         </p>
         <div class="hero-actions">
           <a href="#experience" class="btn primary-btn">View Experience</a>
-          <a href="/resume.html" class="btn secondary-btn" target="_blank">View Resume</a>
+          <a href="/resume.html" class="btn secondary-btn" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right:8px;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+            View Resume
+          </a>
         </div>
       </div>
     </section>
 
-    <section id="about" class="about">
-      <div class="container">
-        <div class="about-grid glass-card">
-          <div class="about-text">
-            <h2>About Me</h2>
-            <p>
-              I am a results-driven professional with a BCIS degree and extensive experience in development, deployment, and database management. I thrive in agile environments, working alongside cross-functional teams to deliver robust software architectures.
-            </p>
-            <p style="margin-top: 1rem;">
-              When I'm not coding, I'm usually making music. You can check out my latest musical attempts on <a href="https://youtube.com/@prosubodh" target="_blank" style="color: var(--primary-accent); text-decoration: none;">YouTube (@prosubodh)</a>!
-            </p>
+    <section id="about" class="section container reveal">
+      <div class="section-head">
+        <h2 class="section-title">About Me</h2>
+        <p class="section-subtitle">Bridging the gap between design and solid engineering</p>
+      </div>
+      <div class="about-grid">
+        <div class="glass-card about-text">
+          <p>
+            I am a results-driven professional with a BCIS degree and extensive experience in development, deployment, and database management. I thrive in agile environments, working alongside cross-functional teams to deliver robust software architectures that scale effectively.
+          </p>
+          <p>
+            When I'm not architecting systems, you'll find me producing music. Feel free to check out my latest musical endeavors on 
+            <a href="https://youtube.com/@prosubodh" target="_blank" style="color: var(--accent-primary); text-decoration: none; font-weight: 500;">YouTube (@prosubodh)</a>.
+          </p>
+          
+          <div class="skills-container">
+            <h3 class="skills-title">Core Technologies</h3>
             <div class="skills-grid">
-              <span class="skill-tag">React / Next.js</span>
+              <span class="skill-tag">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                React / Next.js
+              </span>
               <span class="skill-tag">Node.js</span>
               <span class="skill-tag">TypeScript / JS</span>
               <span class="skill-tag">C# / .NET</span>
               <span class="skill-tag">PHP</span>
-              <span class="skill-tag">PostgreSQL / SQL</span>
+              <span class="skill-tag">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+                PostgreSQL
+              </span>
               <span class="skill-tag">MongoDB</span>
             </div>
           </div>
@@ -82,156 +98,214 @@
       </div>
     </section>
 
-    <section id="experience" class="experience">
-      <div class="container">
+    <section id="experience" class="section container reveal">
+      <div class="section-head">
         <h2 class="section-title">Work Experience</h2>
-        <div class="timeline">
-          
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content glass-card">
-              <h3>Software Development Lead</h3>
-              <h4>Cyberensic (Remote)</h4>
-              <span class="date">Jun 2023 – Present</span>
-              <p>Leading the development of a Governance Risk & Compliance (GRC) platform using React, Node.js, and PostgreSQL. Conducting code reviews and providing secure web architectures.</p>
+        <p class="section-subtitle">My professional journey so far</p>
+      </div>
+      <div class="timeline">
+        
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <h3>Software Development Lead</h3>
+            <h4>Cyberensic <span>(Remote)</span></h4>
+            <div class="timeline-meta">
+              <span>Jun 2023 – Present</span>
             </div>
+            <p class="timeline-desc">Leading the development of a Governance Risk & Compliance (GRC) platform using React, Node.js, and PostgreSQL. Conducting comprehensive code reviews, establishing secure CI/CD pipelines, and designing robust, scalable web architectures.</p>
           </div>
-
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content glass-card">
-              <h3>Senior Software Engineer</h3>
-              <h4>UBA Solution (Lalitpur, Nepal)</h4>
-              <span class="date">Apr 2023 – May 2023</span>
-              <p>Planned and resolved system bugs, participated in Scrum ceremonies, and wrote unit tests for robust code quality and system reliability.</p>
-            </div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content glass-card">
-              <h3>Senior Software Engineer</h3>
-              <h4>Leapfrog Technology (Kathmandu, Nepal)</h4>
-              <span class="date">Feb 2021 – Mar 2023</span>
-              <p>Designed and maintained high-availability enterprise applications. Managed migration of MS Power Platform apps to separate services and conducted performance optimizations.</p>
-            </div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content glass-card">
-              <h3>Software Engineer</h3>
-              <h4>Pioneer Solutions (Kathmandu, Nepal)</h4>
-              <span class="date">Aug 2016 – Jan 2021</span>
-              <p>Developed comprehensive UI and extensive DB structures. Implemented complex stored procedures and improved overall system stability.</p>
-            </div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content glass-card">
-              <h3>Software Developer</h3>
-              <h4>NCCS Software (Kathmandu, Nepal)</h4>
-              <span class="date">May 2015 – Jun 2016</span>
-              <p>Specialized in HTML, CSS, JavaScript, PHP, and MySQL. Managed Drupal projects focusing on custom module and entity development.</p>
-            </div>
-          </div>
-
         </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <h3>Senior Software Engineer</h3>
+            <h4>UBA Solution <span>(Lalitpur, Nepal)</span></h4>
+            <div class="timeline-meta">
+              <span>Apr 2023 – May 2023</span>
+            </div>
+            <p class="timeline-desc">Planned and resolved intricate system bugs, actively participated in Scrum methodologies, and implemented thorough unit tests for strict code quality assurance and system reliability improvements.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <h3>Senior Software Engineer</h3>
+            <h4>Leapfrog Technology <span>(Kathmandu, Nepal)</span></h4>
+            <div class="timeline-meta">
+              <span>Feb 2021 – Mar 2023</span>
+            </div>
+            <p class="timeline-desc">Designed, implemented, and maintained high-availability enterprise applications. Successfully managed the migration of Microsoft Power Platform legacy apps into modern, separated microservices while conducting deep performance optimizations.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <h3>Software Engineer</h3>
+            <h4>Pioneer Solutions <span>(Kathmandu, Nepal)</span></h4>
+            <div class="timeline-meta">
+              <span>Aug 2016 – Jan 2021</span>
+            </div>
+            <p class="timeline-desc">Developed comprehensive UI components and extensive database structures. Focused on complex stored procedures optimization resulting in dramatically improved overall system throughput and query stability.</p>
+          </div>
+        </div>
+
       </div>
     </section>
 
-    <section id="projects" class="projects">
-      <div class="container">
+    <section id="projects" class="section container reveal">
+      <div class="section-head">
         <h2 class="section-title">Selected Projects</h2>
-        <div class="projects-grid">
-          
-          <div class="project-card glass-card">
-            <div class="project-content">
-              <h3>GRC Enterprise Platform</h3>
-              <p>A comprehensive risk and compliance management solution designed for internal enterprise auditing and tracking.</p>
-              <div class="project-tech">
-                <span>React</span>
-                <span>Node.js</span>
-                <span>PostgreSQL</span>
-              </div>
+        <p class="section-subtitle">Showcase of complex technical deliveries</p>
+      </div>
+      <div class="projects-grid">
+        
+        <a href="#" class="project-card glass-card reveal" style="text-decoration:none;">
+          <div class="project-img-wrapper">
+            <div class="project-graphic" style="background: linear-gradient(-45deg, var(--accent-primary), var(--accent-secondary)); opacity: 0.8;"></div>
+            <div class="project-graphic-overlay"></div>
+          </div>
+          <div class="project-content">
+            <h3>GRC Enterprise Platform</h3>
+            <p>A comprehensive risk and compliance management solution designed for internal enterprise auditing and tracking, emphasizing security and access control.</p>
+            <div class="project-tech">
+              <span>React</span>
+              <span>Node.js</span>
+              <span>PostgreSQL</span>
+              <span>Redux</span>
             </div>
           </div>
+        </a>
 
-          <div class="project-card glass-card">
-            <div class="project-content">
-              <h3>High Availability App Migration</h3>
-              <p>Migrated existing legacy modules from Microsoft Power Platform into modern, scalable microservices.</p>
-              <div class="project-tech">
-                <span>C#</span>
-                <span>SQL Server</span>
-                <span>TypeScript</span>
-              </div>
+        <a href="#" class="project-card glass-card reveal" style="text-decoration:none;">
+          <div class="project-img-wrapper">
+            <div class="project-graphic" style="background: linear-gradient(135deg, var(--accent-secondary), var(--accent-primary)); border-radius: 50%; opacity: 0.8;"></div>
+            <div class="project-graphic-overlay"></div>
+          </div>
+          <div class="project-content">
+            <h3>High-Availability Migration</h3>
+            <p>Deconstructed legacy MS Power Platform applications, migrating critical endpoints to stateless microservices ensuring 99.99% uptime.</p>
+            <div class="project-tech">
+              <span>C#</span>
+              <span>.NET Core</span>
+              <span>SQL Server</span>
+              <span>Microservices</span>
             </div>
           </div>
+        </a>
 
-          <div class="project-card glass-card">
-            <div class="project-content">
-              <h3>
-                <a href="https://aujaar.vercel.app/#tools" target="_blank" style="color: inherit; text-decoration: underline; text-decoration-color: var(--primary-accent);">Aujaar (औजार)</a>
-                <span style="font-size: 0.8rem; background: rgba(255, 165, 0, 0.2); color: orange; padding: 0.2rem 0.5rem; border-radius: 8px; margin-left: 10px; vertical-align: middle;">Work in Progress</span>
-              </h3>
-              <p>The plain language engine for developers. Instantly translate complex regex, cron, SQL, and Git diffs into plain English and vice-versa.</p>
-              <div class="project-tech">
-                <span>Next.js</span>
-                <span>TypeScript</span>
-                <span>Tailwind</span>
-              </div>
+        <a href="https://aujaar.vercel.app/#tools" target="_blank" class="project-card glass-card reveal" style="text-decoration:none;">
+          <div class="project-img-wrapper">
+            <div class="project-graphic" style="background: linear-gradient(45deg, var(--accent-primary), var(--bg-surface)); clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); opacity: 0.8;"></div>
+            <div class="project-graphic-overlay"></div>
+          </div>
+          <div class="project-content">
+            <h3>
+              Aujaar (औजार)
+              <span class="status-badge">WIP</span>
+            </h3>
+            <p>An experimental plain-language engine for developers. Instantly parses and translates complex regex, cron syntax, SQL, and Git diffs into plain English.</p>
+            <div class="project-tech">
+              <span>Next.js</span>
+              <span>TypeScript</span>
+              <span>Tailwind CSS</span>
+              <span>AI Integration</span>
             </div>
           </div>
+        </a>
 
-        </div>
       </div>
     </section>
   </main>
 
-  <footer class="glass-footer">
+  <footer>
     <div class="container footer-content">
-      <p>&copy; <span id="current-year"></span> Subodh Khanal. Crafted with passion.</p>
-      <div class="social-links">
-        <a href="https://github.com/prosubodh" target="_blank">GitHub</a>
-        <a href="https://linkedin.com/in/prosubodh" target="_blank">LinkedIn</a>
+      <div class="footer-logo">
+        sk.
+      </div>
+      <p style="color: var(--text-secondary);">&copy; <span id="current-year"></span> Subodh Khanal. Crafted with passion.</p>
+      <div class="footer-socials">
+        <a href="https://github.com/prosubodh" target="_blank" aria-label="GitHub">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+        </a>
+        <a href="https://linkedin.com/in/prosubodh" target="_blank" aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+        </a>
       </div>
     </div>
   </footer>
 
   <script>
+    // Update Copyright Year
     document.getElementById("current-year").textContent = new Date().getFullYear();
     
     // Smooth scrolling for navigation
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
         e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth'
-        });
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth'
+          });
+        }
       });
     });
 
     // Theme Toggle Logic
     const themeToggle = document.getElementById('theme-toggle');
-    const themeIcon = document.getElementById('theme-icon');
+    const iconLight = document.getElementById('theme-icon-light');
+    const iconDark = document.getElementById('theme-icon-dark');
     
+    // Check local storage or system preference
     const currentTheme = localStorage.getItem('theme');
+    
+    function setTheme(isLight) {
+      if (isLight) {
+        document.body.classList.add('light-theme');
+        iconLight.style.display = 'block';
+        iconDark.style.display = 'none';
+        localStorage.setItem('theme', 'light');
+      } else {
+        document.body.classList.remove('light-theme');
+        iconLight.style.display = 'none';
+        iconDark.style.display = 'block';
+        localStorage.setItem('theme', 'dark');
+      }
+    }
+
     if (currentTheme === 'light') {
-      document.body.classList.add('light-theme');
-      themeIcon.textContent = '🌙';
+      setTheme(true);
+    } else {
+      setTheme(false); // Default dark
     }
 
     themeToggle.addEventListener('click', () => {
-      document.body.classList.toggle('light-theme');
-      if (document.body.classList.contains('light-theme')) {
-        localStorage.setItem('theme', 'light');
-        themeIcon.textContent = '🌙';
-      } else {
-        localStorage.setItem('theme', 'dark');
-        themeIcon.textContent = '☀️';
-      }
+      const isLightNow = document.body.classList.contains('light-theme');
+      setTheme(!isLightNow);
+    });
+
+    // Scroll Reveal Animation Observer
+    const observerOptions = {
+      root: null,
+      threshold: 0.1,
+      rootMargin: "0px 0px -50px 0px"
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.reveal').forEach(el => {
+      observer.observe(el);
     });
   </script>
 </body>
