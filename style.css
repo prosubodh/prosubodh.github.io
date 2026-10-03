@@ -232,6 +232,7 @@ body.light-theme .primary-btn { color: #fff; }
 .hero-badge::before {
   content: ''; width: 8px; height: 8px; border-radius: 50%;
   background: #34d399; box-shadow: 0 0 10px #34d399;
+  animation: pulse-dot 2s ease-in-out infinite;
 }
 
 .hero-title {
