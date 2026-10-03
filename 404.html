@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#070b1a">
+  <title>Page not found | Subodh Khanal</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg-mesh"></div>
+  <div class="noise-overlay"></div>
+
+  <main class="hero container" style="min-height: 100svh;">
+    <div class="hero-content" style="margin: auto 0; text-align: center; max-width: 640px; margin-left: auto; margin-right: auto;">
+      <span class="eyebrow">404</span>
+      <h1 class="hero-title">Lost in the codebase?</h1>
+      <p class="hero-subtitle" style="margin-left: auto; margin-right: auto;">The page you're looking for doesn't exist or moved. Let's get you back on track.</p>
+      <div class="hero-actions" style="justify-content: center;">
+        <a href="index.html" class="btn primary-btn">Back Home</a>
+        <a href="resume.html" class="btn secondary-btn">View Resume</a>
+        <a href="index.html#contact" class="btn secondary-btn">Get in Touch</a>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    if ((localStorage.getItem('theme') || 'system') === 'light' ||
+        ((localStorage.getItem('theme') || 'system') === 'system' && window.matchMedia('(prefers-color-scheme: light)').matches)) {
+      document.body.classList.add('light-theme');
+    }
+  </script>
+</body>
+</html>
