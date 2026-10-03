@@ -464,6 +464,15 @@ footer { border-top: 1px solid var(--border); padding: 2.5rem 0; margin-top: 2re
 .service-cta { font-family: var(--font-mono); font-size: 0.8rem; color: var(--accent); }
 .service-card:hover .service-cta { text-decoration: underline; text-underline-offset: 3px; }
 
+/* Pricing strip */
+.pricing-strip { margin-top: 1.25rem; padding: 1.5rem 1.75rem; }
+.pricing-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+.price-item { display: flex; flex-direction: column; gap: 0.2rem; }
+.price-value { font-family: var(--font-main); font-size: 1.5rem; font-weight: 600; color: var(--text-primary); }
+.price-per { font-family: var(--font-mono); font-size: 0.75rem; font-weight: 400; color: var(--text-muted); }
+.price-label { font-size: 0.8rem; color: var(--text-secondary); }
+.pricing-note { margin-top: 1rem; font-size: 0.85rem; color: var(--text-muted); }
+
 /* Skip link */
 .skip-link {
   position: absolute; left: 16px; top: -60px; z-index: 200;
@@ -688,6 +697,7 @@ a.contact-value:hover { color: var(--accent); }
   .chip-a { left: 2%; }
   .chip-b { right: 2%; }
   .stats-grid { grid-template-columns: repeat(2, 1fr); }
+  .pricing-grid { grid-template-columns: repeat(2, 1fr); }
   .services-grid { grid-template-columns: 1fr; }
   .contact-grid { grid-template-columns: 1fr; }
   .footer-content { flex-wrap: wrap; }
