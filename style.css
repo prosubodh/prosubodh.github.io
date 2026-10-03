@@ -411,6 +411,11 @@ footer { border-top: 1px solid var(--border); padding: 2.5rem 0; margin-top: 2re
 
 /* Stats strip */
 .stats-strip { padding-bottom: 1rem; }
+
+/* Stats strip sits divider-free between hero and About */
+#home.hero { border-bottom: none; }
+#about.section { border-top: none; }
+.stats-strip { padding-top: 2.5rem; }
 .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
 .stat-card { padding: 1.25rem 1rem; text-align: center; display: flex; flex-direction: column; gap: 0.25rem; }
 .stat-value {
