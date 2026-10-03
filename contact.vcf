@@ -1,0 +1,12 @@
+BEGIN:VCARD
+VERSION:3.0
+FN:Subodh Khanal
+N:Khanal;Subodh;;;
+TITLE:Full Stack Developer / Tech Lead
+EMAIL;TYPE=INTERNET,PREF:prosubodh@gmail.com
+TEL;TYPE=CELL,PREF:+9779861063831
+ADR;TYPE=HOME:;;Kathmandu;;;Nepal;
+URL:https://prosubodh.github.io/
+URL:https://linkedin.com/in/prosubodh
+URL:https://github.com/prosubodh
+END:VCARD
