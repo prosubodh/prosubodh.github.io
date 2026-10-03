@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450">
+  <rect width="800" height="450" fill="#0f1419"/>
+  <rect x="60" y="70" width="680" height="310" rx="16" fill="#161c24"/>
+  <polyline points="100,330 220,300 340,320 460,240 580,270 700,180" fill="none" stroke="#38bdf8" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="700" cy="180" r="8" fill="#34d399"/>
+  <text x="400" y="420" text-anchor="middle" font-family="monospace" font-size="20" fill="#8b96a3">ETRM - Energy Trading &amp; Risk Management</text>
+</svg>
