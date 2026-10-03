@@ -468,8 +468,8 @@ footer { border-top: 1px solid var(--border); padding: 2.5rem 0; margin-top: 2re
 .pricing-strip { margin-top: 1.25rem; padding: 1.5rem 1.75rem; }
 .pricing-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
 .price-item { display: flex; flex-direction: column; gap: 0.2rem; }
-.price-value { font-family: var(--font-main); font-size: 1.5rem; font-weight: 600; color: var(--text-primary); }
-.price-per { font-family: var(--font-mono); font-size: 0.75rem; font-weight: 400; color: var(--text-muted); }
+.price-value { font-family: var(--font-main); font-size: 1.3rem; font-weight: 600; color: var(--text-primary); white-space: nowrap; }
+.price-per { font-family: var(--font-mono); font-size: 0.8rem; font-weight: 400; color: var(--text-muted); }
 .price-label { font-size: 0.8rem; color: var(--text-secondary); }
 .pricing-note { margin-top: 1rem; font-size: 0.85rem; color: var(--text-muted); }
 
