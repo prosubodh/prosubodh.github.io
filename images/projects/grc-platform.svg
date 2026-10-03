@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450">
+  <rect width="800" height="450" fill="#0f1419"/>
+  <!-- browser chrome -->
+  <rect x="40" y="40" width="720" height="380" rx="14" fill="#161c24"/>
+  <rect x="40" y="40" width="720" height="34" rx="14" fill="#1d2530"/>
+  <circle cx="62" cy="57" r="5" fill="#f87171"/>
+  <circle cx="80" cy="57" r="5" fill="#fbbf24"/>
+  <circle cx="98" cy="57" r="5" fill="#34d399"/>
+  <rect x="130" y="47" width="300" height="20" rx="10" fill="#0f1419"/>
+  <text x="280" y="61" text-anchor="middle" font-family="monospace" font-size="11" fill="#5c6875">cisoadapt.ai/dashboard</text>
+  <!-- sidebar -->
+  <rect x="40" y="74" width="150" height="346" fill="#131a21"/>
+  <rect x="58" y="96" width="114" height="12" rx="6" fill="#8b5cf6"/>
+  <rect x="58" y="126" width="90" height="10" rx="5" fill="#2a333e"/>
+  <rect x="58" y="150" width="104" height="10" rx="5" fill="#2a333e"/>
+  <rect x="58" y="174" width="78" height="10" rx="5" fill="#2a333e"/>
+  <!-- content cards -->
+  <rect x="214" y="98" width="240" height="90" rx="10" fill="#1a222c"/>
+  <text x="232" y="126" font-family="monospace" font-size="11" fill="#8b96a3">COMPLIANCE SCORE</text>
+  <text x="232" y="162" font-family="monospace" font-size="30" font-weight="bold" fill="#8b5cf6">94%</text>
+  <rect x="478" y="98" width="262" height="90" rx="10" fill="#1a222c"/>
+  <text x="496" y="126" font-family="monospace" font-size="11" fill="#8b96a3">OPEN RISKS</text>
+  <text x="496" y="162" font-family="monospace" font-size="30" font-weight="bold" fill="#fbbf24">7</text>
+  <!-- chart -->
+  <rect x="214" y="210" width="526" height="172" rx="10" fill="#1a222c"/>
+  <polyline points="240,344 320,310 400,322 480,268 560,282 640,236 720,250" fill="none" stroke="#8b5cf6" stroke-width="3" stroke-linecap="round"/>
+  <polyline points="240,360 340,352 440,340 540,348 640,330 720,336" fill="none" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 6"/>
+</svg>

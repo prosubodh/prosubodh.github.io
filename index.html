@@ -1,41 +1,94 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Subodh Khanal - Software Development Lead Portfolio. 11+ years of experience in scaleable, full-stack enterprise solutions.">
+  <meta name="description" content="Subodh Khanal - Software Development Lead. 11+ years building scalable, full-stack enterprise solutions.">
+  <meta name="keywords" content="Subodh Khanal, Full Stack Developer, Tech Lead, Software Engineer, React, Node.js, PostgreSQL, GRC, ETRM, SaaS, Remote, Kathmandu">
+  <meta name="author" content="Subodh Khanal">
+  <link rel="canonical" href="https://prosubodh.github.io/">
   <title>Subodh Khanal | Software Development Lead</title>
-  
-  <!-- Modern Typography -->
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://prosubodh.github.io/">
+  <meta property="og:title" content="Subodh Khanal | Software Development Lead">
+  <meta property="og:description" content="11+ years building scalable, full-stack enterprise solutions.">
+  <meta property="og:image" content="https://prosubodh.github.io/images/photo.jpg">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Subodh Khanal | Software Development Lead">
+  <meta name="twitter:description" content="11+ years building scalable, full-stack enterprise solutions.">
+
+  <link rel="icon" type="image/svg+xml" href="images/LOGO.svg">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Subodh Khanal",
+    "jobTitle": "Full Stack Developer / Tech Lead",
+    "email": "prosubodh@gmail.com",
+    "telephone": "+977-9861063831",
+    "address": { "@type": "PostalAddress", "addressLocality": "Kathmandu", "addressCountry": "NP" },
+    "url": "https://prosubodh.github.io/",
+    "sameAs": ["https://github.com/prosubodh", "https://linkedin.com/in/prosubodh", "https://youtube.com/@prosubodh"],
+    "keywords": "Full Stack Developer, Tech Lead, React, Node.js, PostgreSQL, GRC, ETRM, SaaS, Remote"
+  }
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;800&display=swap" rel="stylesheet">
-  
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Ambient Effects -->
   <div class="bg-mesh"></div>
   <div class="noise-overlay"></div>
-  
+
   <header class="glass-header">
     <div class="container nav-container">
-      <a href="#" class="logo-text">
-        sk<span class="logo-dot">.</span>
-      </a>
+      <a href="#" class="logo-text">sk<span class="logo-dot">.</span></a>
       <nav>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
+          <li><a href="#learning">Learning</a></li>
+          <li class="theme-li">
+            <span class="theme-label">Theme</span>
+            <div class="theme-dd" data-theme-dd>
+              <button class="theme-dd-btn" aria-haspopup="listbox" aria-expanded="false" aria-label="Theme">
+                <span class="theme-icon" aria-hidden="true"></span>
+              </button>
+              <ul class="theme-dd-menu" role="listbox" aria-label="Theme">
+                <li><button data-mode="system" role="option"><span class="dd-icon"></span>System</button></li>
+                <li><button data-mode="light" role="option"><span class="dd-icon"></span>Light</button></li>
+                <li><button data-mode="dark" role="option"><span class="dd-icon"></span>Dark</button></li>
+              </ul>
+            </div>
+          </li>
         </ul>
       </nav>
-      <div style="display: flex; align-items: center;">
-        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">
-          <svg id="theme-icon-light" style="display:none;" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
-          <svg id="theme-icon-dark" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+      <div style="display: flex; align-items: center; gap: 0.5rem;">
+        <a href="https://github.com/prosubodh" target="_blank" class="btn primary-btn nav-cta">GitHub</a>
+        <div class="theme-dd" data-theme-dd>
+          <button class="theme-dd-btn" aria-haspopup="listbox" aria-expanded="false" aria-label="Theme">
+            <span class="theme-icon" aria-hidden="true"></span>
+          </button>
+          <ul class="theme-dd-menu" role="listbox" aria-label="Theme">
+            <li><button data-mode="system" role="option"><span class="dd-icon"></span>System</button></li>
+            <li><button data-mode="light" role="option"><span class="dd-icon"></span>Light</button></li>
+            <li><button data-mode="dark" role="option"><span class="dd-icon"></span>Dark</button></li>
+          </ul>
+        </div>
+        <button id="nav-toggle" class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <svg id="icon-menu" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+          <svg id="icon-close" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
         </button>
-        <a href="https://github.com/prosubodh" target="_blank" class="btn primary-btn">GitHub</a>
       </div>
     </div>
   </header>
@@ -44,269 +97,323 @@
     <section id="home" class="hero container">
       <div class="hero-content">
         <div class="hero-badge">Available for new opportunities</div>
-        <h1 class="hero-title">
-          Hi, I'm <br/>
-          <span class="gradient-text">Subodh Khanal</span>
-        </h1>
+        <h1 class="hero-title">Subodh Khanal</h1>
         <p class="hero-subtitle">
-          Software Development Lead specializing in building scalable, robust full-stack enterprise architectures with over 11 years of experience.
+          Full Stack Developer &amp; Tech Lead building scalable, robust full-stack enterprise architectures, 11+ years across development, deployment, and database management.
+        </p>
+        <p class="hero-contact">
+          +977-9861063831 &nbsp;·&nbsp; <a href="mailto:prosubodh@gmail.com">prosubodh@gmail.com</a> &nbsp;·&nbsp; <a href="https://linkedin.com/in/prosubodh" target="_blank">linkedin.com/in/prosubodh</a> &nbsp;·&nbsp; Remote · Kathmandu, Nepal
+        </p>
+        <p class="hero-availability" style="color: var(--accent-2); font-family: var(--font-mono); font-size: 0.8rem; margin-bottom: 2rem;">
+          Open to consultations, guidance, part-time and full-time roles
         </p>
         <div class="hero-actions">
           <a href="#experience" class="btn primary-btn">View Experience</a>
-          <a href="/resume.html" class="btn secondary-btn" target="_blank">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right:8px;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
-            View Resume
-          </a>
+          <a href="/resume.html" class="btn secondary-btn" target="_blank">View Resume</a>
         </div>
       </div>
     </section>
 
-    <section id="about" class="section container reveal">
-      <div class="section-head">
-        <h2 class="section-title">About Me</h2>
-        <p class="section-subtitle">Bridging the gap between design and solid engineering</p>
-      </div>
-      <div class="about-grid">
-        <div class="glass-card about-text">
-          <p>
-            I am a results-driven professional with a BCIS degree and extensive experience in development, deployment, and database management. I thrive in agile environments, working alongside cross-functional teams to deliver robust software architectures that scale effectively.
-          </p>
-          <p>
-            When I'm not architecting systems, you'll find me producing music. Feel free to check out my latest musical endeavors on 
-            <a href="https://youtube.com/@prosubodh" target="_blank" style="color: var(--accent-primary); text-decoration: none; font-weight: 500;">YouTube (@prosubodh)</a>.
-          </p>
-          
-          <div class="skills-container">
-            <h3 class="skills-title">Core Technologies</h3>
-            <div class="skills-grid">
-              <span class="skill-tag">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
-                React / Next.js
-              </span>
-              <span class="skill-tag">Node.js</span>
-              <span class="skill-tag">TypeScript / JS</span>
-              <span class="skill-tag">C# / .NET</span>
-              <span class="skill-tag">PHP</span>
-              <span class="skill-tag">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
-                PostgreSQL
-              </span>
-              <span class="skill-tag">MongoDB</span>
-            </div>
+    <section id="about" class="section container">
+      <span class="eyebrow">About</span>
+      <h2 class="section-title">A bit about me</h2>
+      <p class="section-subtitle" style="margin-bottom: 2.5rem;">Bridging the gap between design and solid engineering.</p>
+      <div class="glass-card about-text reveal">
+        <p>
+          I am a results-driven software engineer with a BCIS degree and extensive experience in development, deployment, and database management. I thrive in agile environments, working alongside cross-functional teams to deliver robust software architectures that scale effectively.
+        </p>
+        <p>
+          Outside of work, I produce music on a hobby basis. You can find my latest on
+          <a href="https://youtube.com/@prosubodh" target="_blank">YouTube (@prosubodh)</a>.
+        </p>
+        <div style="margin-top: 2rem;">
+          <a href="/resume.html" class="btn secondary-btn" target="_blank">View Full Resume</a>
+        </div>
+
+        <div class="skills-container">
+          <h3 class="skills-title">Core Technologies</h3>
+          <div class="skills-grid">
+            <span class="skill-tag">React / Next.js</span>
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">Express.js</span>
+            <span class="skill-tag">TypeScript / JS</span>
+            <span class="skill-tag">C# / .NET</span>
+            <span class="skill-tag">PHP (Drupal)</span>
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">MongoDB</span>
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">SQL Server</span>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="experience" class="section container reveal">
-      <div class="section-head">
-        <h2 class="section-title">Work Experience</h2>
-        <p class="section-subtitle">My professional journey so far</p>
+    <section id="experience" class="section container">
+      <span class="eyebrow">Career</span>
+      <h2 class="section-title">Where I've worked</h2>
+      <p class="section-subtitle" style="margin-bottom: 2rem;">My professional journey so far.</p>
+
+      <!-- Gantt-style tenure bar -->
+      <div class="gantt" role="img" aria-label="Career tenure overview">
+        <div class="gantt-seg" style="flex: 14; background: #38bdf8;" title="NCCS Software · 2015-2016"><span>NCCS</span></div>
+        <div class="gantt-seg" style="flex: 54; background: #34d399;" title="Pioneer Solutions · 2016-2021"><span>Pioneer</span></div>
+        <div class="gantt-seg" style="flex: 26; background: #a78bfa;" title="Leapfrog Technology · 2021-2023"><span>Leapfrog</span></div>
+        <div class="gantt-seg" style="flex: 2; background: #fbbf24;" title="UBA Solution · 2023"></div>
+        <div class="gantt-seg" style="flex: 40; background: #f472b6;" title="Cyberensic · 2023-Present"><span>Cyberensic</span></div>
       </div>
+
       <div class="timeline">
-        
-        <div class="timeline-item reveal">
+
+        <div class="timeline-item reveal" style="--dot: #f472b6;">
           <div class="timeline-dot"></div>
-          <div class="timeline-card glass-card">
+          <div class="timeline-card glass-card open">
+            <span class="year-pin">2023</span>
             <h3>Software Development Lead</h3>
-            <h4>Cyberensic <span>(Remote)</span></h4>
-            <div class="timeline-meta">
-              <span>Jun 2023 – Present</span>
-            </div>
-            <p class="timeline-desc">Leading the development of a Governance Risk & Compliance (GRC) platform using React, Node.js, and PostgreSQL. Conducting comprehensive code reviews, establishing secure CI/CD pipelines, and designing robust, scalable web architectures.</p>
+            <h4><span class="company-chip">CY</span> Cyberensic <span>(Remote)</span></h4>
+            <div class="timeline-meta">Jun 2023 – Present · <span class="duration">3 yrs 4 mos</span></div>
+            <button class="expand-btn" aria-expanded="true">Hide</button>
+            <p class="timeline-desc">Leading a team of 8 (developers, QA, DevOps) building the Governance Risk & Compliance (<abbr title="Governance, Risk &amp; Compliance">GRC</abbr>) platform using React, Node.js, and PostgreSQL. Shipped a standards assessment (ISO 27001) that compresses weeks to days with evidence-based automations, an AI-powered risk register that logs risks in minutes instead of hours, and an end-to-end governance/risk/compliance/project-management flow that replaces spreadsheets. Also proactively receiving Product Ownership mentorship from an experienced Scrum professional, improving product planning and strategy alignment.</p>
           </div>
         </div>
 
-        <div class="timeline-item reveal">
+        <div class="timeline-item reveal" style="--dot: #fbbf24;">
           <div class="timeline-dot"></div>
           <div class="timeline-card glass-card">
+            <span class="year-pin">2023</span>
             <h3>Senior Software Engineer</h3>
-            <h4>UBA Solution <span>(Lalitpur, Nepal)</span></h4>
-            <div class="timeline-meta">
-              <span>Apr 2023 – May 2023</span>
-            </div>
+            <h4><span class="company-chip">UB</span> UBA Solution <span>(Lalitpur, Nepal)</span></h4>
+            <div class="timeline-meta">Apr 2023 – May 2023 · <span class="duration">2 mos</span></div>
+            <button class="expand-btn" aria-expanded="false">Details</button>
             <p class="timeline-desc">Planned and resolved intricate system bugs, actively participated in Scrum methodologies, and implemented thorough unit tests for strict code quality assurance and system reliability improvements.</p>
           </div>
         </div>
 
-        <div class="timeline-item reveal">
+        <div class="timeline-item reveal" style="--dot: #a78bfa;">
           <div class="timeline-dot"></div>
           <div class="timeline-card glass-card">
+            <span class="year-pin">2021</span>
             <h3>Senior Software Engineer</h3>
-            <h4>Leapfrog Technology <span>(Kathmandu, Nepal)</span></h4>
-            <div class="timeline-meta">
-              <span>Feb 2021 – Mar 2023</span>
-            </div>
-            <p class="timeline-desc">Designed, implemented, and maintained high-availability enterprise applications. Successfully managed the migration of Microsoft Power Platform legacy apps into modern, separated microservices while conducting deep performance optimizations.</p>
+            <h4><span class="company-chip">LF</span> Leapfrog Technology <span>(Kathmandu, Nepal)</span></h4>
+            <div class="timeline-meta">Feb 2021 – Mar 2023 · <span class="duration">2 yrs 2 mos</span></div>
+            <button class="expand-btn" aria-expanded="false">Details</button>
+            <p class="timeline-desc">Designed, implemented, and maintained high-availability enterprise applications, including the Signetic Healthcare Platform. Managed the migration of Microsoft Power Platform modules into separated services, ran performance testing, and led knowledge-sharing sessions introducing new frameworks and tools.</p>
           </div>
         </div>
 
-        <div class="timeline-item reveal">
+        <div class="timeline-item reveal" style="--dot: #34d399;">
           <div class="timeline-dot"></div>
           <div class="timeline-card glass-card">
+            <span class="year-pin">2016</span>
             <h3>Software Engineer</h3>
-            <h4>Pioneer Solutions <span>(Kathmandu, Nepal)</span></h4>
-            <div class="timeline-meta">
-              <span>Aug 2016 – Jan 2021</span>
-            </div>
-            <p class="timeline-desc">Developed comprehensive UI components and extensive database structures. Focused on complex stored procedures optimization resulting in dramatically improved overall system throughput and query stability.</p>
+            <h4><span class="company-chip">PS</span> Pioneer Solutions <span>(Kathmandu, Nepal)</span></h4>
+            <div class="timeline-meta">Aug 2016 – Jan 2021 · <span class="duration">4 yrs 6 mos</span></div>
+            <button class="expand-btn" aria-expanded="false">Details</button>
+            <p class="timeline-desc">Developed comprehensive UI components and database structures including tables, functions, and stored procedures. Added a full menu search feature that increased user efficiency by ~20% by removing the need to click through nested menus and navigation. Pioneer Solutions was fully acquired by Hitachi Energy about a month before my departure in Jan 2021.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal" style="--dot: #38bdf8;">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <span class="year-pin">2015</span>
+            <h3>Software Developer</h3>
+            <h4><span class="company-chip">NC</span> NCCS Software <span>(Kathmandu, Nepal)</span></h4>
+            <div class="timeline-meta">May 2015 – Jun 2016 · <span class="duration">1 yr 2 mos</span></div>
+            <button class="expand-btn" aria-expanded="false">Details</button>
+            <p class="timeline-desc">Designed and developed websites for educational institutions and corporate clients using HTML, CSS, jQuery, and PHP with MySQL. Built Drupal entities and modules, collaborating with cross-functional teams to deliver high-quality web solutions.</p>
           </div>
         </div>
 
       </div>
     </section>
 
-    <section id="projects" class="section container reveal">
-      <div class="section-head">
-        <h2 class="section-title">Selected Projects</h2>
-        <p class="section-subtitle">Showcase of complex technical deliveries</p>
-      </div>
+    <section id="projects" class="section container">
+      <span class="eyebrow">Work</span>
+      <h2 class="section-title">Things I've built</h2>
+      <p class="section-subtitle" style="margin-bottom: 3rem;">Complex technical deliveries.</p>
       <div class="projects-grid">
-        
-        <a href="#" class="project-card glass-card reveal" style="text-decoration:none;">
+
+        <a href="https://cisoadapt.ai/" target="_blank" class="project-card glass-card reveal" style="text-decoration:none;">
           <div class="project-img-wrapper">
-            <div class="project-graphic" style="background: linear-gradient(-45deg, var(--accent-primary), var(--accent-secondary)); opacity: 0.8;"></div>
-            <div class="project-graphic-overlay"></div>
+            <img class="project-img" src="images/projects/grc-platform.png" alt="CISO Adapt GRC platform preview" loading="lazy">
           </div>
           <div class="project-content">
-            <h3>GRC Enterprise Platform</h3>
-            <p>A comprehensive risk and compliance management solution designed for internal enterprise auditing and tracking, emphasizing security and access control.</p>
-            <div class="project-tech">
-              <span>React</span>
-              <span>Node.js</span>
-              <span>PostgreSQL</span>
-              <span>Redux</span>
-            </div>
+            <h3>CISO Adapt <span style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--text-muted);">cisoadapt.ai</span></h3>
+            <p>A comprehensive Governance, Risk & Compliance platform that delivers standards assessments (ISO 27001) in days instead of weeks, an AI-powered risk register, and a single end-to-end governance/risk/compliance/project-management workflow.</p>
+            <div class="project-tech"><span>React</span><span>Node.js</span><span>PostgreSQL</span><span>shadcn/ui</span><span>React Hook Form</span><span>Azure</span><span><abbr title="Single Sign-On">SSO</abbr></span></div>
           </div>
         </a>
 
-        <a href="#" class="project-card glass-card reveal" style="text-decoration:none;">
+        <a href="https://www.signetic.com/pharmacies" target="_blank" class="project-card glass-card reveal" style="text-decoration:none;">
           <div class="project-img-wrapper">
-            <div class="project-graphic" style="background: linear-gradient(135deg, var(--accent-secondary), var(--accent-primary)); border-radius: 50%; opacity: 0.8;"></div>
-            <div class="project-graphic-overlay"></div>
+            <img class="project-img" src="images/projects/signetic.png" alt="Signetic Healthcare Platform preview" loading="lazy">
           </div>
           <div class="project-content">
-            <h3>High-Availability Migration</h3>
-            <p>Deconstructed legacy MS Power Platform applications, migrating critical endpoints to stateless microservices ensuring 99.99% uptime.</p>
-            <div class="project-tech">
-              <span>C#</span>
-              <span>.NET Core</span>
-              <span>SQL Server</span>
-              <span>Microservices</span>
-            </div>
+            <h3>Signetic Healthcare Platform <span style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--text-muted);">signetic.com · a Leapfrog project</span></h3>
+            <p>Built a high-availability platform for healthcare operations, including a major accomplishment: migrating legacy MS Power Platform modules to stateless microservices with 99.99% uptime.</p>
+            <div class="project-tech"><span>Microsoft Dynamics</span><span><abbr title="Power Apps Component Framework">PCF</abbr></span><span>React</span><span>Power Automate</span><span>Flows</span><span>C#</span><span>.NET Core</span></div>
+          </div>
+        </a>
+
+        <a href="https://www.hitachienergy.com/products-and-solutions/energy-portfolio-management/energy-commercial-enablement-software-solutions/energy-trading-and-risk-management-etrm-software-solution#tab-tabs-7bd60a2cfe-item-8e63cf3301" target="_blank" class="project-card glass-card reveal" style="text-decoration:none;">
+          <div class="project-img-wrapper">
+            <img class="project-img" src="images/projects/etrm.svg" alt="ETRM software preview" loading="lazy">
+          </div>
+          <div class="project-content">
+            <h3>Energy Trading & Risk Management (<abbr title="Energy Trading and Risk Management">ETRM</abbr>)</h3>
+            <p>An energy trading and risk management platform built at Pioneer Solutions (later acquired by Hitachi Energy) using PHP, SQL Server, and the DHTMLX JavaScript library.</p>
+            <div class="project-tech"><span>PHP</span><span>SQL Server</span><span>DHTMLX</span><span><abbr title="Energy Trading and Risk Management">ETRM</abbr></span></div>
           </div>
         </a>
 
         <a href="https://aujaar.vercel.app/#tools" target="_blank" class="project-card glass-card reveal" style="text-decoration:none;">
           <div class="project-img-wrapper">
-            <div class="project-graphic" style="background: linear-gradient(45deg, var(--accent-primary), var(--bg-surface)); clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); opacity: 0.8;"></div>
-            <div class="project-graphic-overlay"></div>
+            <img class="project-img" src="images/projects/aujaar.png" alt="Aujaar preview" loading="lazy">
           </div>
           <div class="project-content">
-            <h3>
-              Aujaar (औजार)
-              <span class="status-badge">WIP</span>
-            </h3>
-            <p>An experimental plain-language engine for developers. Instantly parses and translates complex regex, cron syntax, SQL, and Git diffs into plain English.</p>
-            <div class="project-tech">
-              <span>Next.js</span>
-              <span>TypeScript</span>
-              <span>Tailwind CSS</span>
-              <span>AI Integration</span>
-            </div>
+            <h3>Aujaar (औजार) <span class="status-badge"><abbr title="Work in Progress">WIP</abbr></span></h3>
+            <p>An experimental plain-language engine for developers. Translates complex regex, cron syntax, SQL, and Git diffs into plain English.</p>
+            <div class="project-tech"><span>Next.js</span><span>TypeScript</span><span>Tailwind CSS</span><span>AI Integration</span></div>
           </div>
         </a>
 
+      </div>
+    </section>
+
+    <section id="learning" class="section container">
+      <span class="eyebrow">Growth</span>
+      <h2 class="section-title">Certifications & Learning</h2>
+      <p class="section-subtitle" style="margin-bottom: 2.5rem;">Continuous professional development.</p>
+      <div class="glass-card about-text reveal">
+        <ul style="color: var(--text-secondary); line-height: 2.1; padding-left: 1.25rem; font-family: var(--font-mono); font-size: 0.9rem;">
+          <li><abbr title="Health Insurance Portability and Accountability Act">HIPAA</abbr> Course - Leapfrog Technology, Nov 2022 &nbsp;<a href="certificates/hipaa-certificate.pdf">View certificate</a></li>
+          <li>US Healthcare Course - Leapfrog Technology, Nov 2022 &nbsp;<a href="certificates/us-healthcare-certificate.pdf">View certificate</a></li>
+          <li>Product Ownership Coaching - mentorship received from an experienced Scrum professional; product planning and strategy now better aligned</li>
+          <li>Flutter App Development Workshop - Leapfrog Technology</li>
+        </ul>
       </div>
     </section>
   </main>
 
   <footer>
     <div class="container footer-content">
-      <div class="footer-logo">
-        sk.
-      </div>
-      <p style="color: var(--text-secondary);">&copy; <span id="current-year"></span> Subodh Khanal. Crafted with passion.</p>
+      <div class="footer-logo">sk<span class="logo-dot">.</span></div>
+      <p style="color: var(--text-secondary); font-size: 0.9rem;">&copy; <span id="current-year"></span> Subodh Khanal. Crafted with passion.</p>
       <div class="footer-socials">
         <a href="https://github.com/prosubodh" target="_blank" aria-label="GitHub">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
         </a>
         <a href="https://linkedin.com/in/prosubodh" target="_blank" aria-label="LinkedIn">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
         </a>
       </div>
     </div>
   </footer>
 
   <script>
-    // Update Copyright Year
     document.getElementById("current-year").textContent = new Date().getFullYear();
-    
-    // Smooth scrolling for navigation
+
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
+        const href = this.getAttribute('href');
+        if (href === '#') return;
         e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
+        const target = document.querySelector(href);
         if (target) {
-          target.scrollIntoView({
-            behavior: 'smooth'
-          });
+          const y = target.getBoundingClientRect().top + window.scrollY - (parseInt(getComputedStyle(document.documentElement).getPropertyValue('--header-height')) || 72);
+          window.scrollTo({ top: y, behavior: 'smooth' });
         }
       });
     });
 
-    // Theme Toggle Logic
-    const themeToggle = document.getElementById('theme-toggle');
-    const iconLight = document.getElementById('theme-icon-light');
-    const iconDark = document.getElementById('theme-icon-dark');
-    
-    // Check local storage or system preference
-    const currentTheme = localStorage.getItem('theme');
-    
-    function setTheme(isLight) {
-      if (isLight) {
-        document.body.classList.add('light-theme');
-        iconLight.style.display = 'block';
-        iconDark.style.display = 'none';
-        localStorage.setItem('theme', 'light');
-      } else {
-        document.body.classList.remove('light-theme');
-        iconLight.style.display = 'none';
-        iconDark.style.display = 'block';
-        localStorage.setItem('theme', 'dark');
-      }
-    }
-
-    if (currentTheme === 'light') {
-      setTheme(true);
-    } else {
-      setTheme(false); // Default dark
-    }
-
-    themeToggle.addEventListener('click', () => {
-      const isLightNow = document.body.classList.contains('light-theme');
-      setTheme(!isLightNow);
-    });
-
-    // Scroll Reveal Animation Observer
-    const observerOptions = {
-      root: null,
-      threshold: 0.1,
-      rootMargin: "0px 0px -50px 0px"
+    const themeIcons = {
+      system: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>',
+      light: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>',
+      dark: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>'
     };
 
-    const observer = new IntersectionObserver((entries, observer) => {
+    function applyTheme(mode) {
+      const isLight = mode === 'light' || (mode === 'system' && window.matchMedia('(prefers-color-scheme: light)').matches);
+      document.body.classList.toggle('light-theme', isLight);
+      localStorage.setItem('theme', mode);
+      document.querySelectorAll('.theme-icon').forEach(el => el.innerHTML = themeIcons[mode] || themeIcons.system);
+      document.querySelectorAll('[data-mode]').forEach(b => {
+        b.classList.toggle('selected', b.dataset.mode === mode);
+      });
+    }
+
+    const savedTheme = localStorage.getItem('theme') || 'system';
+    applyTheme(savedTheme);
+
+    // Fill each option's icon span once
+    document.querySelectorAll('.theme-dd [data-mode]').forEach(btn => {
+      btn.querySelector('.dd-icon').innerHTML = themeIcons[btn.dataset.mode];
+    });
+
+    // Toggle dropdown open/close on icon click
+    document.querySelectorAll('[data-theme-dd]').forEach(dd => {
+      const btn = dd.querySelector('.theme-dd-btn');
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const open = dd.classList.toggle('open');
+        btn.setAttribute('aria-expanded', open);
+        // close others
+        document.querySelectorAll('[data-theme-dd]').forEach(o => { if (o !== dd) { o.classList.remove('open'); o.querySelector('.theme-dd-btn').setAttribute('aria-expanded','false'); } });
+      });
+    });
+
+    // Pick an option
+    document.querySelectorAll('.theme-dd-menu [data-mode]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        applyTheme(btn.dataset.mode);
+        document.querySelectorAll('[data-theme-dd]').forEach(dd => { dd.classList.remove('open'); dd.querySelector('.theme-dd-btn').setAttribute('aria-expanded','false'); });
+      });
+    });
+
+    // Click outside closes
+    document.addEventListener('click', () => {
+      document.querySelectorAll('[data-theme-dd]').forEach(dd => { dd.classList.remove('open'); dd.querySelector('.theme-dd-btn').setAttribute('aria-expanded','false'); });
+    });
+
+    window.matchMedia('(prefers-color-scheme: light)').addEventListener('change', () => {
+      if ((localStorage.getItem('theme') || 'system') === 'system') applyTheme('system');
+    });
+
+    const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add('active');
           observer.unobserve(entry.target);
         }
       });
-    }, observerOptions);
+    }, { root: null, threshold: 0.05, rootMargin: "0px 0px -40px 0px" });
 
-    document.querySelectorAll('.reveal').forEach(el => {
-      observer.observe(el);
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    // Mobile nav toggle
+    const navToggle = document.getElementById('nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    navToggle.addEventListener('click', () => {
+      const open = navLinks.classList.toggle('open');
+      navToggle.classList.toggle('open', open);
+      navToggle.setAttribute('aria-expanded', open);
+    });
+    navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+      navToggle.classList.remove('open');
+      navToggle.setAttribute('aria-expanded', 'false');
+    }));
+
+    // Expandable timeline entries
+    document.querySelectorAll('.expand-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const card = btn.closest('.timeline-card');
+        const open = card.classList.toggle('open');
+        btn.setAttribute('aria-expanded', open);
+        btn.textContent = open ? 'Hide' : 'Details';
+      });
     });
   </script>
 </body>
 </html>
+
