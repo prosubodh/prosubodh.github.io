@@ -420,6 +420,14 @@ footer { border-top: 1px solid var(--border); padding: 2.5rem 0; margin-top: 2re
 }
 .stat-label { font-size: 0.8rem; color: var(--text-secondary); }
 
+/* Technical growth chart */
+.growth-block { margin-top: 2.5rem; }
+.growth-legend { display: flex; flex-wrap: wrap; gap: 0.5rem 1.25rem; margin-bottom: 1rem; }
+.growth-legend span { display: inline-flex; align-items: center; gap: 0.45rem; font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-secondary); }
+.legend-dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; }
+.growth-chart { width: 100%; height: auto; display: block; }
+.growth-caption { font-size: 0.8rem; color: var(--text-muted); margin-top: 0.75rem; line-height: 1.6; }
+
 /* Contact */
 .contact-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
 .contact-card { display: flex; flex-direction: column; gap: 0.4rem; text-decoration: none; padding: 1.75rem; }
