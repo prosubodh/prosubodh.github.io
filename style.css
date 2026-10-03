@@ -514,6 +514,16 @@ footer { border-top: 1px solid var(--border); padding: 2.5rem 0; margin-top: 2re
 .reveal { opacity: 0; transform: translateY(32px); transition: all 0.7s cubic-bezier(0.5, 0, 0, 1); }
 .reveal.active { opacity: 1; transform: translateY(0); }
 
+/* Keyboard focus */
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
+  .reveal { opacity: 1 !important; transform: none !important; }
+}
+
 @media (max-width: 768px) {
   .nav-toggle { display: flex; }
   .nav-links {
