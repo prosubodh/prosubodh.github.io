@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450">
+  <rect width="800" height="450" fill="#0f1419"/>
+  <rect x="100" y="90" width="600" height="270" rx="14" fill="#161c24"/>
+  <rect x="100" y="90" width="600" height="36" rx="14" fill="#1d2530"/>
+  <circle cx="126" cy="108" r="5" fill="#f87171"/>
+  <circle cx="144" cy="108" r="5" fill="#fbbf24"/>
+  <circle cx="162" cy="108" r="5" fill="#34d399"/>
+  <text x="130" y="180" font-family="monospace" font-size="22" fill="#8b96a3">$</text>
+  <text x="152" y="180" font-family="monospace" font-size="22" fill="#e8edf2">npx azcodr my-new-project</text>
+  <text x="130" y="230" font-family="monospace" font-size="16" fill="#8b5cf6">✔ workspace scaffolded</text>
+  <text x="130" y="262" font-family="monospace" font-size="16" fill="#8b5cf6">✔ 28 domain rules loaded</text>
+  <text x="130" y="294" font-family="monospace" font-size="16" fill="#8b5cf6">✔ smoke test green</text>
+  <rect x="130" y="316" width="12" height="22" fill="#8b5cf6"/>
+</svg>
