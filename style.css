@@ -151,11 +151,6 @@ body.light-theme .primary-btn { color: #fff; }
 }
 @media (max-width: 768px) {
   .nav-container > div .theme-dd { display: none; }
-  .theme-li .theme-dd { position: static; }
-  .theme-li .theme-dd-menu {
-    position: relative; top: 0; right: 0; margin-top: 0.5rem;
-    box-shadow: none; border-radius: 10px; width: 100%;
-  }
 }
 @media (min-width: 769px) {
   .nav-links .theme-li { display: none; }
@@ -195,6 +190,8 @@ body.light-theme .primary-btn { color: #fff; }
 .theme-dd-menu li button.selected .dd-icon { color: var(--accent); }
 .dd-icon { display: inline-flex; width: 16px; height: 16px; }
 .theme-icon { display: inline-flex; align-items: center; }
+.theme-li { display: flex; align-items: center; gap: 0.5rem; }
+.theme-li .theme-label { margin-right: auto; }
 .theme-toggle:hover { border-color: var(--accent); transform: rotate(12deg); }
 
 /* Cards */

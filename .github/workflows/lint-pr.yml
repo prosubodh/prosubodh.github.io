@@ -46,7 +46,7 @@ jobs:
 
           BRANCH_NAME=$(echo "$PR_DATA" | jq -r .headRefName)
           PR_BODY=$(echo "$PR_DATA" | jq -r .body)
-          COMMITS=$(echo "$PR_DATA" | jq -r '.commits[].message' | grep -v '^$')
+          COMMITS=$(echo "$PR_DATA" | jq -r '.commits[].messageHeadline // empty' | grep -v '^$')
 
           echo "Branch: $BRANCH_NAME"
           echo "PR Body Preview: ${PR_BODY:0:100}..."
