@@ -467,11 +467,11 @@ footer { border-top: 1px solid var(--border); padding: 2.5rem 0; margin-top: 2re
 /* Pricing strip */
 .pricing-strip { margin-top: 1.25rem; padding: 1.5rem 1.75rem; }
 .pricing-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
-.price-item { display: flex; flex-direction: column; gap: 0.2rem; }
-.price-value { font-family: var(--font-main); font-size: 1.3rem; font-weight: 600; color: var(--text-primary); white-space: nowrap; }
-.price-per { font-family: var(--font-mono); font-size: 0.8rem; font-weight: 400; color: var(--text-muted); }
-.price-label { font-size: 0.8rem; color: var(--text-secondary); }
-.pricing-note { margin-top: 1rem; font-size: 0.85rem; color: var(--text-muted); }
+.price-item { display: flex; flex-direction: column; gap: 0.55rem; }
+.price-value { font-family: var(--font-main); font-size: 1.3rem; font-weight: 600; color: var(--text-primary); white-space: nowrap; line-height: 1.3; }
+.price-per { font-family: var(--font-mono); font-size: 0.8rem; font-weight: 400; color: var(--text-muted); margin-left: 0.3rem; }
+.price-label { font-size: 0.8rem; color: var(--text-secondary); line-height: 1.6; }
+.pricing-note { margin-top: 1.4rem; padding-top: 1rem; border-top: 1px solid var(--border); font-size: 0.85rem; color: var(--text-muted); }
 
 /* Skip link */
 .skip-link {
