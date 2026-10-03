@@ -514,6 +514,22 @@ footer { border-top: 1px solid var(--border); padding: 2.5rem 0; margin-top: 2re
   background: var(--accent-soft); color: var(--accent);
 }
 .contact-title { font-weight: 600; color: var(--text-primary); }
+.contact-head { display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; }
+.contact-card { position: relative; }
+.corner-link { position: absolute; top: 1rem; right: 1.25rem; }
+.mini-link { display: inline-flex; align-items: center; font-family: var(--font-mono); font-size: 0.72rem; color: var(--text-muted); text-decoration: none; transition: color 0.2s; }
+.mini-link:hover { color: var(--accent); }
+.contact-value-row { display: flex; align-items: center; gap: 0.4rem; min-width: 0; }
+.contact-value { flex: 1 1 auto; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.copy-inline {
+  flex: none; display: inline-flex; align-items: center; justify-content: center;
+  width: 26px; height: 26px; border-radius: 8px;
+  background: transparent; border: 1px solid transparent;
+  color: var(--text-muted); cursor: pointer;
+  transition: border-color 0.2s, color 0.2s, background 0.2s;
+}
+.copy-inline:hover { border-color: var(--border-strong); color: var(--accent); background: var(--accent-soft); }
+.copy-inline.copied { color: #34d399; border-color: #34d399; }
 a.contact-value { text-decoration: none; }
 a.contact-value:hover { color: var(--accent); }
 .contact-value { font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-secondary); overflow-wrap: break-word; }
