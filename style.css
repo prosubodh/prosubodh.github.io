@@ -474,6 +474,22 @@ footer { border-top: 1px solid var(--border); padding: 2.5rem 0; margin-top: 2re
 .now-list li { position: relative; padding-left: 1.25rem; color: var(--text-secondary); font-size: 0.95rem; }
 .now-list li::before { content: '→'; position: absolute; left: 0; color: var(--accent); }
 
+/* Recommendations */
+.reco-grid { display: grid; gap: 1.25rem; }
+.reco-card { position: relative; padding: 2rem 2rem 1.75rem; margin: 0; }
+.reco-quote {
+  font-family: var(--font-main); font-size: 4rem; line-height: 1;
+  background: linear-gradient(120deg, var(--accent), var(--accent-2));
+  -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; color: transparent;
+}
+.reco-card blockquote { color: var(--text-secondary); font-size: 1.02rem; line-height: 1.75; margin: 0.5rem 0 1.5rem; }
+.reco-author { display: flex; align-items: center; gap: 1rem; }
+.reco-author img { width: 52px; height: 52px; border-radius: 50%; object-fit: cover; border: 2px solid var(--border-strong); }
+.reco-who { display: flex; flex-direction: column; gap: 0.15rem; }
+.reco-who a { font-weight: 600; color: var(--text-primary); text-decoration: none; }
+.reco-who a:hover { color: var(--accent); }
+.reco-role { font-size: 0.82rem; color: var(--text-muted); }
+
 /* Contact */
 .contact-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
 .contact-card { display: flex; flex-direction: column; gap: 0.4rem; text-decoration: none; padding: 1.75rem; }
