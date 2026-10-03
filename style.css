@@ -151,6 +151,12 @@ body.light-theme .primary-btn { color: #fff; }
 }
 @media (max-width: 768px) {
   .nav-container > div .theme-dd { display: none; }
+  .theme-li { flex-wrap: wrap; }
+  .theme-li .theme-dd { position: static; margin-left: auto; }
+  .theme-li .theme-dd.open .theme-dd-menu {
+    position: static; width: 100%; flex-basis: 100%;
+    margin-top: 0.5rem; box-shadow: none;
+  }
 }
 @media (min-width: 769px) {
   .nav-links .theme-li { display: none; }
