@@ -367,6 +367,7 @@ abbr[title]::after { content: ' ?'; font-size: 0.65em; vertical-align: super; co
 .project-card:hover .project-img { transform: scale(1.04); }
 .project-content { padding: 1.75rem; flex: 1; display: flex; flex-direction: column; }
 .project-content h3 { font-size: 1.25rem; margin-bottom: 0.75rem; }
+.dl-badge { height: 20px; vertical-align: -4px; }
 .project-content p { color: var(--text-secondary); margin-bottom: 1.5rem; flex: 1; font-size: 0.95rem; }
 .project-tech { display: flex; flex-wrap: wrap; gap: 0.45rem; }
 .project-tech span {
