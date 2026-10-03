@@ -418,7 +418,12 @@ footer { border-top: 1px solid var(--border); padding: 2.5rem 0; margin-top: 2re
 @keyframes floaty { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
 
 /* Stats strip */
-.stats-strip { padding-top: 2.5rem; padding-bottom: 1rem; }
+.stats-strip { padding-bottom: 1rem; }
+
+/* Stats strip sits divider-free between hero and About; hero sizes to content */
+#home.hero { border-bottom: none; min-height: auto; }
+#about.section { border-top: none; }
+.stats-strip { padding-top: 2.5rem; }
 .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
 .stat-card { padding: 1.25rem 1rem; text-align: center; display: flex; flex-direction: column; gap: 0.25rem; }
 .stat-value {
@@ -427,6 +432,14 @@ footer { border-top: 1px solid var(--border); padding: 2.5rem 0; margin-top: 2re
   -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; color: transparent;
 }
 .stat-label { font-size: 0.8rem; color: var(--text-secondary); }
+
+/* Technical growth chart */
+.growth-block { margin-top: 2.5rem; }
+.growth-legend { display: flex; flex-wrap: wrap; gap: 0.5rem 1.25rem; margin-bottom: 1rem; }
+.growth-legend span { display: inline-flex; align-items: center; gap: 0.45rem; font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-secondary); }
+.legend-dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; }
+.growth-chart { width: 100%; height: auto; display: block; }
+.growth-caption { font-size: 0.8rem; color: var(--text-muted); margin-top: 0.75rem; line-height: 1.6; }
 
 /* Contact */
 .contact-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
