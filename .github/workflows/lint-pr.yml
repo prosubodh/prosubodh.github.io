@@ -1,4 +1,4 @@
-name: Lint PR
+﻿name: Lint PR
 
 on:
   pull_request_target:
@@ -35,7 +35,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          echo "🔍 Validating PR..."
+          echo "≡ƒöì Validating PR..."
 
           # Get PR data
           PR_DATA=$(gh pr view ${{ github.event.pull_request.number }} --json title,body,headRefName,commits)
@@ -57,23 +57,23 @@ jobs:
 
           # 1. Validate branch name pattern
           if [[ ! "$BRANCH_NAME" =~ ^users\/[a-z]+\.[a-z]+\/(feat|fix|docs|style|refactor|test|chore)\/[a-z0-9._-]+$ ]]; then
-            echo "::error ::❌ Branch name \"$BRANCH_NAME\" does not follow pattern: 'users/firstname.lastname/type/task-name'"
+            echo "::error ::Γ¥î Branch name \"$BRANCH_NAME\" does not follow pattern: 'users/firstname.lastname/type/task-name'"
             echo "::notice ::Valid types: feat|fix|docs|style|refactor|test|chore"
             ((ERROR_COUNT++))
           fi
 
           # 2. Validate commit messages
           if [[ -z "$COMMITS" ]]; then
-            echo "::error ::❌ No commits found in the PR"
+            echo "::error ::Γ¥î No commits found in the PR"
             ((ERROR_COUNT++))
           else
             while IFS= read -r commit; do
               if [[ ! "$commit" =~ ^[A-Z] ]]; then
-                echo "::error ::❌ Commit message must start with uppercase: \"$commit\""
+                echo "::error ::Γ¥î Commit message must start with uppercase: \"$commit\""
                 ((ERROR_COUNT++))
               fi
               if [[ "$commit" =~ \.$ ]]; then
-                echo "::warning ::ℹ️ Commit message should not end with period: \"$commit\""
+                echo "::warning ::Γä╣∩╕Å Commit message should not end with period: \"$commit\""
                 ((WARNING_COUNT++))
               fi
             done <<< "$COMMITS"
@@ -81,18 +81,18 @@ jobs:
 
           # 3. Validate PR description
           if [[ -z "$PR_BODY" || "$PR_BODY" == "null" ]]; then
-            echo "::error ::❌ PR description is required"
+            echo "::error ::Γ¥î PR description is required"
             echo "::notice ::Please include: Purpose, Changes, Testing, Screenshots (if applicable)"
             ((ERROR_COUNT++))
           elif [[ $(echo "$PR_BODY" | wc -w) -lt 15 ]]; then
-            echo "::warning ::⚠️ PR description seems brief (minimum 15 words recommended)"
+            echo "::warning ::ΓÜá∩╕Å PR description seems brief (minimum 15 words recommended)"
             ((WARNING_COUNT++))
           fi
 
           # Final result
           if [ $ERROR_COUNT -gt 0 ]; then
-            echo "::error ::❌ Validation failed with $ERROR_COUNT error(s) and $WARNING_COUNT warning(s)"
+            echo "::error ::Γ¥î Validation failed with $ERROR_COUNT error(s) and $WARNING_COUNT warning(s)"
             exit 1
           else
-            echo "✅ All checks passed with $WARNING_COUNT warning(s)"
+            echo "Γ£à All checks passed with $WARNING_COUNT warning(s)"
           fi
