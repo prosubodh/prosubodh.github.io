@@ -464,6 +464,15 @@ footer { border-top: 1px solid var(--border); padding: 2.5rem 0; margin-top: 2re
 .growth-chart { width: 100%; height: auto; display: block; }
 .growth-caption { font-size: 0.8rem; color: var(--text-muted); margin-top: 0.75rem; line-height: 1.6; }
 
+/* Now block */
+.now-block { margin-top: 2.5rem; border-top: 1px solid var(--border); padding-top: 1.75rem; }
+.now-block .skills-title { display: flex; align-items: center; gap: 0.6rem; }
+.now-dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; background: #34d399; box-shadow: 0 0 10px #34d399; animation: pulse-dot 2s ease-in-out infinite; }
+@keyframes pulse-dot { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.55; transform: scale(0.85); } }
+.now-list { list-style: none; display: grid; gap: 0.6rem; }
+.now-list li { position: relative; padding-left: 1.25rem; color: var(--text-secondary); font-size: 0.95rem; }
+.now-list li::before { content: '→'; position: absolute; left: 0; color: var(--accent); }
+
 /* Contact */
 .contact-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
 .contact-card { display: flex; flex-direction: column; gap: 0.4rem; text-decoration: none; padding: 1.75rem; }
