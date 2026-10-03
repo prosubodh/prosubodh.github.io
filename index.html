@@ -46,6 +46,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
   <div class="bg-mesh"></div>
   <div class="noise-overlay"></div>
 
@@ -58,6 +59,7 @@
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#learning">Learning</a></li>
+          <li><a href="#services">Services</a></li>
           <li><a href="#contact">Contact</a></li>
           <li class="theme-li">
             <span class="theme-label">Theme</span>
@@ -94,7 +96,7 @@
     </div>
   </header>
 
-  <main>
+  <main id="main-content">
     <section id="home" class="hero container">
       <div class="hero-grid">
       <div class="hero-content">
@@ -190,7 +192,7 @@
           <div class="timeline-card glass-card open">
             <span class="year-pin">2023</span>
             <h3>Software Development Lead</h3>
-            <h4><span class="company-chip">CY</span> Cyberensic <span>(Remote)</span></h4>
+            <h4><img class="company-logo" src="images/companies/cyberensic.png" alt="Cyberensic logo"> Cyberensic <span>(Remote)</span></h4>
             <div class="timeline-meta">Jun 2023 – Present · <span class="duration">3 yrs 4 mos</span></div>
             <button class="expand-btn" aria-expanded="true">Hide</button>
             <p class="timeline-desc">Leading a team of 8 (developers, QA, DevOps) building the Governance Risk & Compliance (<abbr title="Governance, Risk &amp; Compliance">GRC</abbr>) platform using React, Node.js, and PostgreSQL. Shipped a standards assessment (ISO 27001) that compresses weeks to days with evidence-based automations, an AI-powered risk register that logs risks in minutes instead of hours, and an end-to-end governance/risk/compliance/project-management flow that replaces spreadsheets. Also proactively receiving Product Ownership mentorship from an experienced Scrum professional, improving product planning and strategy alignment.</p>
@@ -229,7 +231,7 @@
             <h4><span class="company-chip">PS</span> Pioneer Solutions <span>(Kathmandu, Nepal)</span></h4>
             <div class="timeline-meta">Aug 2016 – Jan 2021 · <span class="duration">4 yrs 6 mos</span></div>
             <button class="expand-btn" aria-expanded="false">Details</button>
-            <p class="timeline-desc">Built applications in core PHP with comprehensive UI components and database structures including tables, functions, and stored procedures. Added a full menu search feature that increased user efficiency by ~20% by removing the need to click through nested menus and navigation. <span class="timeline-note">Pioneer Solutions was fully acquired by Hitachi Energy about a month before my departure in Jan 2021.</span></p>
+            <p class="timeline-desc">Built applications in core PHP with comprehensive UI components and database structures including tables, functions, and stored procedures. Added a full menu search feature that increased user efficiency by ~20% by removing the need to click through nested menus and navigation. <span class="timeline-note">Pioneer Solutions was fully acquired by Hitachi Energy <img class="company-logo acquired" src="images/companies/hitachi.jpeg" alt="Hitachi Energy logo"> about a month before my departure in Jan 2021.</span></p>
           </div>
         </div>
 
@@ -315,6 +317,38 @@
       </div>
     </section>
 
+    <section id="services" class="section container">
+      <span class="eyebrow">Services</span>
+      <h2 class="section-title">What I can help with</h2>
+      <p class="section-subtitle" style="margin-bottom: 2.5rem;">Consultations, guidance, and part-time or full-time engagements. Remote-first, based in Kathmandu.</p>
+      <div class="services-grid">
+        <a href="#contact" class="service-card glass-card reveal">
+          <span class="contact-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg></span>
+          <h3>Fractional Tech Leadership</h3>
+          <p>Leading a distributed team of 8 across development, QA and DevOps: roadmaps, reviews, CI/CD and delivery habits that stick.</p>
+          <span class="service-cta">Get in touch</span>
+        </a>
+        <a href="#contact" class="service-card glass-card reveal">
+          <span class="contact-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg></span>
+          <h3>GRC &amp; Compliance Engineering</h3>
+          <p>Governance, risk and compliance platforms: ISO 27001 assessments in days, evidence-based automation, and AI-assisted risk registers.</p>
+          <span class="service-cta">Get in touch</span>
+        </a>
+        <a href="#contact" class="service-card glass-card reveal">
+          <span class="contact-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg></span>
+          <h3>Consultations &amp; Guidance</h3>
+          <p>Architecture reviews and hands-on guidance across React, Node.js, .NET, PHP, Dynamics 365 and the Power Platform.</p>
+          <span class="service-cta">Get in touch</span>
+        </a>
+        <a href="#contact" class="service-card glass-card reveal">
+          <span class="contact-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg></span>
+          <h3>Agile Delivery &amp; Mentoring</h3>
+          <p>Scrum teams that ship: knowledge-sharing sessions, performance testing habits, and product planning that stays aligned.</p>
+          <span class="service-cta">Get in touch</span>
+        </a>
+      </div>
+    </section>
+
     <section id="contact" class="section container">
       <span class="eyebrow">Contact</span>
       <h2 class="section-title">Let's work together</h2>
@@ -347,6 +381,7 @@
         <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
         <a href="#learning">Learning</a>
+        <a href="#services">Services</a>
         <a href="#contact">Contact</a>
       </nav>
       <p style="color: var(--text-secondary); font-size: 0.9rem;">&copy; <span id="current-year"></span> Subodh Khanal · Remote, Kathmandu</p>
@@ -435,7 +470,7 @@
     });
 
     // Scrollspy: highlight active nav link
-    const spySections = ['about', 'experience', 'projects', 'learning', 'contact']
+    const spySections = ['about', 'experience', 'projects', 'learning', 'services', 'contact']
       .map(id => document.getElementById(id)).filter(Boolean);
     const navAnchors = document.querySelectorAll('.nav-links a[href^="#"]');
     const spy = new IntersectionObserver((entries) => {
