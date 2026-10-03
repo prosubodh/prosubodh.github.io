@@ -289,6 +289,11 @@ body.light-theme .primary-btn { color: #fff; }
 .timeline-card h4 span { color: var(--text-muted); }
 .timeline-meta { font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-muted); margin-bottom: 1rem; }
 .timeline-desc { color: var(--text-secondary); line-height: 1.7; font-size: 0.98rem; overflow: hidden; max-height: 0; opacity: 0; transition: max-height 0.4s ease, opacity 0.3s ease, margin 0.3s ease; margin-top: 0; }
+.timeline-note {
+  display: block; margin-top: 0.75rem; padding-left: 0.75rem;
+  border-left: 2px solid var(--border-strong);
+  font-size: 0.82rem; font-style: italic; color: var(--text-muted); line-height: 1.6;
+}
 .timeline-card.open .timeline-desc { max-height: 400px; opacity: 1; margin-top: 1rem; }
 
 .duration { color: var(--accent-2); }
