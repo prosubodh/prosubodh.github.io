@@ -59,22 +59,22 @@ jobs:
           if [[ ! "$BRANCH_NAME" =~ ^users\/[a-z]+\.[a-z]+\/(feat|fix|docs|style|refactor|test|chore)\/[a-z0-9._-]+$ ]]; then
             echo "::error ::Γ¥î Branch name \"$BRANCH_NAME\" does not follow pattern: 'users/firstname.lastname/type/task-name'"
             echo "::notice ::Valid types: feat|fix|docs|style|refactor|test|chore"
-            ((ERROR_COUNT++))
+            ((ERROR_COUNT+=1))
           fi
 
           # 2. Validate commit messages
           if [[ -z "$COMMITS" ]]; then
             echo "::error ::Γ¥î No commits found in the PR"
-            ((ERROR_COUNT++))
+            ((ERROR_COUNT+=1))
           else
             while IFS= read -r commit; do
               if [[ ! "$commit" =~ ^[A-Z] ]]; then
                 echo "::error ::Γ¥î Commit message must start with uppercase: \"$commit\""
-                ((ERROR_COUNT++))
+                ((ERROR_COUNT+=1))
               fi
               if [[ "$commit" =~ \.$ ]]; then
                 echo "::warning ::Γä╣∩╕Å Commit message should not end with period: \"$commit\""
-                ((WARNING_COUNT++))
+                ((WARNING_COUNT+=1))
               fi
             done <<< "$COMMITS"
           fi
@@ -83,10 +83,10 @@ jobs:
           if [[ -z "$PR_BODY" || "$PR_BODY" == "null" ]]; then
             echo "::error ::Γ¥î PR description is required"
             echo "::notice ::Please include: Purpose, Changes, Testing, Screenshots (if applicable)"
-            ((ERROR_COUNT++))
+            ((ERROR_COUNT+=1))
           elif [[ $(echo "$PR_BODY" | wc -w) -lt 15 ]]; then
             echo "::warning ::ΓÜá∩╕Å PR description seems brief (minimum 15 words recommended)"
-            ((WARNING_COUNT++))
+            ((WARNING_COUNT+=1))
           fi
 
           # Final result
