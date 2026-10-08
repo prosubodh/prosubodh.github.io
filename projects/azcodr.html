@@ -10,7 +10,7 @@
   <link rel="icon" type="image/svg+xml" media="(prefers-color-scheme: light)" href="../images/favicon.svg">
   <link rel="icon" type="image/svg+xml" media="(prefers-color-scheme: dark)" href="../images/favicon-light.svg">
   <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
-  <title>azcodr - Subodh Khanal</title>
+  <title>Prosubodh Portfolio &gt; Projects &gt; azcodr</title>
 
   <meta property="og:type" content="article">
   <meta property="og:title" content="azcodr - Subodh Khanal">
@@ -49,92 +49,197 @@
     .project-body p { color: var(--text-secondary); line-height: 1.85; }
     .project-body .skills-grid { margin-top: 1.25rem; }
   </style>
+</head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
   <div class="bg-mesh"></div>
   <div class="noise-overlay"></div>
 
-  <div class="resume-actions">
-    <div class="theme-dd" data-theme-dd>
-      <button class="theme-dd-btn" aria-haspopup="listbox" aria-expanded="false" aria-label="Theme">
-        <span class="theme-icon" aria-hidden="true"></span>
-      </button>
-      <ul class="theme-dd-menu" role="listbox" aria-label="Theme">
-        <li><button data-mode="system" role="option"><span class="dd-icon"></span>System</button></li>
-        <li><button data-mode="light" role="option"><span class="dd-icon"></span>Light</button></li>
-        <li><button data-mode="dark" role="option"><span class="dd-icon"></span>Dark</button></li>
+  <header class="glass-header">
+    <div class="container nav-container">
+      <a href="../index.html#" class="logo-text">sk<span class="logo-dot">.</span></a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li><a href="../index.html#about">About</a></li>
+          <li><a href="../index.html#experience">Experience</a></li>
+          <li><a href="../index.html#projects">Projects</a></li>
+          <li><a href="../index.html#learning">Learning</a></li>
+          <li><a href="../index.html#services">Services</a></li>
+          <li><a href="../index.html#contact">Contact</a></li>
+          <li class="theme-li">
+            <span class="theme-label">Theme</span>
+            <div class="theme-dd" data-theme-dd>
+              <button class="theme-dd-btn" aria-haspopup="listbox" aria-expanded="false" aria-label="Theme">
+                <span class="theme-icon" aria-hidden="true"></span>
+              </button>
+              <ul class="theme-dd-menu" role="listbox" aria-label="Theme">
+                <li><button data-mode="system" role="option"><span class="dd-icon"></span>System</button></li>
+                <li><button data-mode="light" role="option"><span class="dd-icon"></span>Light</button></li>
+                <li><button data-mode="dark" role="option"><span class="dd-icon"></span>Dark</button></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <div style="display: flex; align-items: center; gap: 0.5rem;">
+        <a href="https://github.com/prosubodh" target="_blank" class="btn primary-btn nav-cta">GitHub</a>
+        <div class="theme-dd" data-theme-dd>
+          <button class="theme-dd-btn" aria-haspopup="listbox" aria-expanded="false" aria-label="Theme">
+            <span class="theme-icon" aria-hidden="true"></span>
+          </button>
+          <ul class="theme-dd-menu" role="listbox" aria-label="Theme">
+            <li><button data-mode="system" role="option"><span class="dd-icon"></span>System</button></li>
+            <li><button data-mode="light" role="option"><span class="dd-icon"></span>Light</button></li>
+            <li><button data-mode="dark" role="option"><span class="dd-icon"></span>Dark</button></li>
+          </ul>
+        </div>
+        <button id="nav-toggle" class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <svg id="icon-menu" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+          <svg id="icon-close" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <div class="container">
+      <header class="project-page">
+        <a class="back-link" href="../index.html#projects">&larr; All projects</a>
+        <span class="eyebrow">Project</span>
+        <h1>azcodr <span class="project-tag">npm &middot; JSR &middot; v2.1.0</span></h1>
+        <p class="project-lede">An enterprise architecture and agentic engineering starter scaffolded with <span style="font-family: var(--font-mono); font-size: 0.85em;">npx azcodr</span> &mdash; problem-first topologies, 28 domain rules, and TDD.</p>
+        <div class="project-actions">
+        <a class="btn primary-btn" href="https://github.com/prosubodh/azcodr" target="_blank" rel="noopener">View on GitHub</a>
+        <a class="btn secondary-btn" href="https://www.npmjs.com/package/azcodr" target="_blank" rel="noopener">npm</a>
+        <a class="btn secondary-btn" href="https://jsr.io/@azcodr/azcodr" target="_blank" rel="noopener">JSR</a>
+        </div>
+      </header>
+
+      <img class="project-hero-img" src="../images/projects/azcodr.svg" alt="azcodr starter template preview" decoding="async">
+
+      <div class="project-body">
+        <section class="glass-card">
+          <span class="eyebrow">Overview</span>
+          <h2>About azcodr</h2>
+          <p>Enterprise architecture and agentic engineering starter template. Scaffold production-ready workspaces with <span style="font-family: var(--font-mono); font-size: 0.85em;">npx azcodr</span>: problem-first topology alignment, 28 domain rules, incremental TDD, and multi-tenancy patterns.</p>
+        </section>
+
+        <section class="glass-card">
+          <span class="eyebrow">Details</span>
+          <h2>Package details</h2>
+          <p>Published on npm and JSR (v2.1.0, MIT) with 28 single-responsibility domain rules, six agentic skills, and deterministic topology scaffolding across six system topologies.</p>
+          <span class="eyebrow" style="display: block; margin-top: 1.75rem;">Stack</span>
+          <div class="skills-grid">
+            <span class="skill-tag">npm</span><span class="skill-tag">JSR</span><span class="skill-tag">Node.js</span><span class="skill-tag">TDD</span><span class="skill-tag">Agentic AI</span>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <div class="footer-logo">sk<span class="logo-dot">.</span></div>
+      </div>
+      <nav class="footer-links" aria-label="Footer">
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#experience">Experience</a>
+        <a href="../index.html#projects">Projects</a>
+        <a href="../index.html#learning">Learning</a>
+        <a href="../index.html#services">Services</a>
+        <a href="../index.html#recommendations">Recommendations</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+      <div class="footer-socials">
+        <a href="https://github.com/prosubodh" target="_blank" aria-label="GitHub">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+        </a>
+        <a href="https://linkedin.com/in/prosubodh" target="_blank" aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+        </a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; <span id="current-year"></span> Subodh Khanal · Remote, Kathmandu · Hand-built with vanilla HTML, CSS &amp; JS</p>
+    </div>
+  </footer>
+
+  <div class="palette-overlay" id="palette-overlay">
+    <div class="palette" role="dialog" aria-label="Jump to section">
+      <input id="palette-input" type="text" placeholder="Jump to a section..." aria-label="Filter sections" autocomplete="off">
+      <ul id="palette-list">
+        <li><a href="../index.html#about">About</a></li>
+        <li><a href="../index.html#experience">Experience</a></li>
+        <li><a href="../index.html#recommendations">Recommendations</a></li>
+        <li><a href="../index.html#projects">Projects</a></li>
+        <li><a href="../index.html#learning">Learning</a></li>
+        <li><a href="../index.html#services">Services</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+        <li><a href="../resume.html">Resume</a></li>
       </ul>
     </div>
   </div>
 
-  <div class="container">
-    <header class="project-page">
-      <a class="back-link" href="../index.html#projects">&larr; All projects</a>
-      <span class="eyebrow">Project</span>
-      <h1>azcodr <span class="project-tag">npm &middot; JSR &middot; v2.1.0</span></h1>
-      <p class="project-lede">An enterprise architecture and agentic engineering starter scaffolded with <span style="font-family: var(--font-mono); font-size: 0.85em;">npx azcodr</span> &mdash; problem-first topologies, 28 domain rules, and TDD.</p>
-      <div class="project-actions">
-        <a class="btn primary-btn" href="https://github.com/prosubodh/azcodr" target="_blank" rel="noopener">View on GitHub</a>
-        <a class="btn secondary-btn" href="https://www.npmjs.com/package/azcodr" target="_blank" rel="noopener">npm</a>
-        <a class="btn secondary-btn" href="https://jsr.io/@azcodr/azcodr" target="_blank" rel="noopener">JSR</a>
-      </div>
-    </header>
 
-    <img class="project-hero-img" src="../images/projects/azcodr.svg" alt="azcodr starter template preview" decoding="async">
 
-    <div class="project-body">
-      <section class="glass-card">
-        <span class="eyebrow">Overview</span>
-        <h2>About azcodr</h2>
-        <p>Enterprise architecture and agentic engineering starter template. Scaffold production-ready workspaces with <span style="font-family: var(--font-mono); font-size: 0.85em;">npx azcodr</span>: problem-first topology alignment, 28 domain rules, incremental TDD, and multi-tenancy patterns.</p>
-      </section>
-
-      <section class="glass-card">
-        <span class="eyebrow">Details</span>
-        <h2>Package details</h2>
-        <p>Published on npm and JSR (v2.1.0, MIT) with 28 single-responsibility domain rules, six agentic skills, and deterministic topology scaffolding across six system topologies.</p>
-        <span class="eyebrow" style="display: block; margin-top: 1.75rem;">Stack</span>
-        <div class="skills-grid">
-          <span class="skill-tag">npm</span><span class="skill-tag">JSR</span><span class="skill-tag">Node.js</span><span class="skill-tag">TDD</span><span class="skill-tag">Agentic AI</span>
-        </div>
-      </section>
-    </div>
-  </div>
-
-  <footer style="border: none;">
-    <div class="container" style="text-align: center; color: var(--text-secondary); font-size: 0.85rem;">
-      &copy; <span id="current-year"></span> Subodh Khanal. All rights reserved.
-    </div>
-  </footer>
+  <button id="back-top" class="back-top" aria-label="Back to top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+  </button>
 
   <script>
     document.getElementById("current-year").textContent = new Date().getFullYear();
 
-    const themeIcons = { system: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>', light: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>', dark: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>' };
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        const href = this.getAttribute('href');
+        if (href === '#') return;
+        e.preventDefault();
+        const target = document.querySelector(href);
+        if (target) {
+          const y = target.getBoundingClientRect().top + window.scrollY - (parseInt(getComputedStyle(document.documentElement).getPropertyValue('--header-height')) || 72);
+          window.scrollTo({ top: y, behavior: 'smooth' });
+        }
+      });
+    });
+
+    const themeIcons = {
+      system: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>',
+      light: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>',
+      dark: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>'
+    };
 
     function applyTheme(mode) {
       const isLight = mode === 'light' || (mode === 'system' && window.matchMedia('(prefers-color-scheme: light)').matches);
       document.body.classList.toggle('light-theme', isLight);
       localStorage.setItem('theme', mode);
       document.querySelectorAll('.theme-icon').forEach(el => el.innerHTML = themeIcons[mode] || themeIcons.system);
-      document.querySelectorAll('[data-mode]').forEach(b => b.classList.toggle('selected', b.dataset.mode === mode));
+      document.querySelectorAll('[data-mode]').forEach(b => {
+        b.classList.toggle('selected', b.dataset.mode === mode);
+      });
     }
 
-    applyTheme(localStorage.getItem('theme') || 'system');
+    const savedTheme = localStorage.getItem('theme') || 'system';
+    applyTheme(savedTheme);
 
+    // Fill each option's icon span once
     document.querySelectorAll('.theme-dd [data-mode]').forEach(btn => {
       btn.querySelector('.dd-icon').innerHTML = themeIcons[btn.dataset.mode];
     });
 
+    // Toggle dropdown open/close on icon click
     document.querySelectorAll('[data-theme-dd]').forEach(dd => {
       const btn = dd.querySelector('.theme-dd-btn');
       btn.addEventListener('click', (e) => {
         e.stopPropagation();
         const open = dd.classList.toggle('open');
         btn.setAttribute('aria-expanded', open);
+        // close others
         document.querySelectorAll('[data-theme-dd]').forEach(o => { if (o !== dd) { o.classList.remove('open'); o.querySelector('.theme-dd-btn').setAttribute('aria-expanded','false'); } });
       });
     });
 
+    // Pick an option
     document.querySelectorAll('.theme-dd-menu [data-mode]').forEach(btn => {
       btn.addEventListener('click', () => {
         applyTheme(btn.dataset.mode);
@@ -142,6 +247,7 @@
       });
     });
 
+    // Click outside closes
     document.addEventListener('click', () => {
       document.querySelectorAll('[data-theme-dd]').forEach(dd => { dd.classList.remove('open'); dd.querySelector('.theme-dd-btn').setAttribute('aria-expanded','false'); });
     });
@@ -149,6 +255,119 @@
     window.matchMedia('(prefers-color-scheme: light)').addEventListener('change', () => {
       if ((localStorage.getItem('theme') || 'system') === 'system') applyTheme('system');
     });
+
+    // Scrollspy: highlight active nav link
+    const spySections = ['about', 'experience', 'recommendations', 'projects', 'learning', 'services', 'contact']
+      .map(id => document.getElementById(id)).filter(Boolean);
+    const navAnchors = document.querySelectorAll('.nav-links a[href^="#"]');
+    const spy = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          navAnchors.forEach(a => {
+            const on = a.getAttribute('href') === '#' + entry.target.id;
+            a.classList.toggle('active', on);
+            if (on) a.setAttribute('aria-current', 'true'); else a.removeAttribute('aria-current');
+          });
+        }
+      });
+    }, { rootMargin: '-40% 0px -55% 0px' });
+    spySections.forEach(s => spy.observe(s));
+
+    // Back to top
+    const backTop = document.getElementById('back-top');
+    window.addEventListener('scroll', () => {
+      backTop.classList.toggle('show', window.scrollY > 600);
+    }, { passive: true });
+    backTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+    // Live tenure durations (inclusive months; end defaults to today)
+    document.querySelectorAll('.duration[data-start]').forEach(el => {
+      const [sy, sm] = el.dataset.start.split('-').map(Number);
+      const end = el.dataset.end ? el.dataset.end.split('-').map(Number) : [new Date().getFullYear(), new Date().getMonth() + 1];
+      const total = (end[0] - sy) * 12 + (end[1] - sm) + 1;
+      if (total <= 0) return;
+      const y = Math.floor(total / 12), m = total % 12;
+      const parts = [];
+      if (y) parts.push(y + (y === 1 ? ' yr' : ' yrs'));
+      if (m) parts.push(m + (m === 1 ? ' mo' : ' mos'));
+      el.textContent = parts.join(' ');
+    });
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { root: null, threshold: 0.05, rootMargin: "0px 0px -40px 0px" });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    // Mobile nav toggle
+    const navToggle = document.getElementById('nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    navToggle.addEventListener('click', () => {
+      const open = navLinks.classList.toggle('open');
+      navToggle.classList.toggle('open', open);
+      navToggle.setAttribute('aria-expanded', open);
+    });
+    navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+      navToggle.classList.remove('open');
+      navToggle.setAttribute('aria-expanded', 'false');
+    }));
+
+
+    // Quick-jump palette (Ctrl/Cmd+K)
+    const paletteOverlay = document.getElementById('palette-overlay');
+    const paletteInput = document.getElementById('palette-input');
+    const paletteLinks = Array.from(document.querySelectorAll('#palette-list a'));
+    function setPalette(open) {
+      paletteOverlay.classList.toggle('open', open);
+      if (open) { paletteInput.value = ''; paletteLinks.forEach(a => a.parentElement.style.display = ''); paletteInput.focus(); }
+    }
+    document.addEventListener('keydown', (e) => {
+      if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') { e.preventDefault(); setPalette(true); }
+      if (e.key === 'Escape') {
+        setPalette(false);
+        navLinks.classList.remove('open');
+        navToggle.classList.remove('open');
+        document.querySelectorAll('[data-theme-dd]').forEach(dd => { dd.classList.remove('open'); });
+      }
+    });
+    paletteInput.addEventListener('input', () => {
+      const q = paletteInput.value.toLowerCase();
+      paletteLinks.forEach(a => a.parentElement.style.display = a.textContent.toLowerCase().includes(q) ? '' : 'none');
+    });
+    paletteOverlay.addEventListener('click', (e) => { if (e.target === paletteOverlay) setPalette(false); });
+
+    // Copy email with feedback
+    document.querySelectorAll('[data-copy]').forEach(btn => {
+      btn.addEventListener('click', async () => {
+        try { await navigator.clipboard.writeText(btn.dataset.copy); }
+        catch (err) {
+          const ta = document.createElement('textarea');
+          ta.value = btn.dataset.copy; document.body.appendChild(ta); ta.select();
+          document.execCommand('copy'); ta.remove();
+        }
+        const original = btn.innerHTML;
+        btn.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>';
+        btn.classList.add('copied');
+        setTimeout(() => { btn.innerHTML = original; btn.classList.remove('copied'); }, 1600);
+      });
+    });
+
+    // Expandable timeline entries
+    document.querySelectorAll('.expand-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const card = btn.closest('.timeline-card, .project-card');
+        const open = card.classList.toggle('open');
+        btn.setAttribute('aria-expanded', open);
+        btn.textContent = open ? 'Hide' : 'Details';
+      });
+    });
+  </script>
   </script>
 </body>
 </html>
