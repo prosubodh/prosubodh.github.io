@@ -360,7 +360,7 @@ abbr[title] { text-decoration: underline dotted; text-underline-offset: 3px; cur
 abbr[title]::after { content: ' ?'; font-size: 0.65em; vertical-align: super; color: var(--accent); }
 
 .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.75rem; }
-.project-card { padding: 0; overflow: hidden; display: flex; flex-direction: column; border-radius: var(--radius); }
+.project-card { padding: 0; overflow: hidden; display: flex; flex-direction: column; border-radius: var(--radius); text-decoration: none; color: inherit; }
 .project-img-wrapper {
   height: 180px; display: flex; align-items: center; justify-content: center;
   border-bottom: 1px solid var(--border); position: relative; overflow: hidden;
@@ -374,23 +374,9 @@ abbr[title]::after { content: ' ?'; font-size: 0.65em; vertical-align: super; co
 }
 .project-card:hover .project-img { transform: scale(1.04); }
 .project-content { padding: 1.75rem; flex: 1; display: flex; flex-direction: column; }
-.project-content h3 { font-size: 1.25rem; margin-bottom: 0.75rem; }
-.project-content h3 a { color: inherit; text-decoration: none; }
-.project-content h3 a:hover { color: var(--accent); }
-a.project-img-wrapper { display: block; text-decoration: none; }
-.project-extra { max-height: 0; overflow: hidden; opacity: 0; margin: 0; transition: max-height 0.4s ease, opacity 0.3s ease, margin 0.3s ease; }
-.project-extra p { color: var(--text-secondary); font-size: 0.92rem; line-height: 1.7; }
-.project-card.open .project-extra { max-height: 320px; opacity: 1; margin-top: 1rem; }
-.project-content .expand-btn { margin-top: 1rem; align-self: flex-start; order: 3; }
-.project-content .project-tech { order: 2; }
-.project-content .project-extra { order: 4; }
-.dl-badge { height: 20px; vertical-align: -4px; }
-.project-content p { color: var(--text-secondary); margin-bottom: 1.5rem; flex: 1; font-size: 0.95rem; }
-.project-tech { display: flex; flex-wrap: wrap; gap: 0.45rem; }
-.project-tech span {
-  font-family: var(--font-mono); font-size: 0.72rem; padding: 0.25rem 0.7rem; border-radius: 6px;
-  background: var(--accent-soft); color: var(--accent); border: 1px solid transparent;
-}
+.project-content h3 { font-size: 1.25rem; margin-bottom: 0.75rem; transition: color 0.2s; }
+.project-card:hover h3 { color: var(--accent); }
+.project-content p { color: var(--text-secondary); margin-bottom: 0; flex: 1; font-size: 0.95rem; }
 .status-badge {
   font-family: var(--font-mono); background: rgba(245, 158, 11, 0.12); color: #f59e0b;
   font-size: 0.68rem; padding: 0.15rem 0.5rem; border-radius: 999px; margin-left: 0.5rem;
@@ -734,7 +720,7 @@ a.contact-value:hover { color: var(--accent); }
 
 @media print {
   .bg-mesh, .glass-header, .theme-toggle, .theme-dd, .resume-actions, .hero-actions, .footer-socials, .back-top, .ticker, .palette-overlay, .skip-link, .expand-btn { display: none !important; }
-  .timeline-card .timeline-desc, .project-card .project-extra { max-height: none !important; opacity: 1 !important; margin-top: 1rem !important; }
+  .timeline-card .timeline-desc { max-height: none !important; opacity: 1 !important; margin-top: 1rem !important; }
 
   html { scroll-behavior: auto; }
 
@@ -766,7 +752,7 @@ a.contact-value:hover { color: var(--accent); }
 
   .eyebrow { color: #555 !important; margin-bottom: 0.25rem; }
 
-  .skill-tag, .project-tech span {
+  .skill-tag {
     background: #f3f4f6 !important;
     border: 1px solid #d1d5db !important;
     color: #374151 !important;
