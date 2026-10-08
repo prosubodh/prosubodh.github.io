@@ -507,8 +507,17 @@ footer { border-top: 1px solid var(--border); padding: 2.5rem 0; margin-top: 2re
   -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; color: transparent;
 }
 .reco-card blockquote { color: var(--text-secondary); font-size: 1.02rem; line-height: 1.75; margin: 0.5rem 0 1.5rem; }
+.reco-card blockquote p { margin: 0 0 0.9rem; }
+.reco-card blockquote p:last-child { margin-bottom: 0; }
 .reco-author { display: flex; align-items: center; gap: 1rem; }
 .reco-author img { width: 52px; height: 52px; border-radius: 50%; object-fit: cover; border: 2px solid var(--border-strong); }
+.reco-initials {
+  flex: none; display: flex; align-items: center; justify-content: center;
+  width: 52px; height: 52px; border-radius: 50%;
+  font-weight: 600; font-size: 0.95rem; color: #fff;
+  background: linear-gradient(120deg, var(--accent), var(--accent-2));
+  border: 2px solid var(--border-strong);
+}
 .reco-who { display: flex; flex-direction: column; gap: 0.15rem; }
 .reco-who a { font-weight: 600; color: var(--text-primary); text-decoration: none; }
 .reco-who a:hover { color: var(--accent); }
