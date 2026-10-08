@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="typed-settings - one-call typed config for TypeScript, published on npm and JSR. Package by Subodh Khanal.">
+  <meta name="author" content="Subodh Khanal">
+  <meta name="theme-color" content="#070b1a">
+  <link rel="canonical" href="https://prosubodh.github.io/projects/typed-settings.html">
+  <link rel="icon" type="image/svg+xml" media="(prefers-color-scheme: light)" href="../images/favicon.svg">
+  <link rel="icon" type="image/svg+xml" media="(prefers-color-scheme: dark)" href="../images/favicon-light.svg">
+  <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+  <title>typed-settings - Subodh Khanal</title>
+
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="typed-settings - Subodh Khanal">
+  <meta property="og:description" content="One-call typed config for TypeScript: env, files, YAML/TOML/JSON, and vault secrets validated into a frozen object.">
+  <meta property="og:image" content="https://prosubodh.github.io/images/projects/typed-settings.svg">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    "name": "typed-settings",
+    "description": "One-call typed config for TypeScript reading env, .env files, YAML/TOML/JSON and vault secrets, validated against your schema into a frozen object.",
+    "url": "https://prosubodh.github.io/projects/typed-settings.html",
+    "image": "https://prosubodh.github.io/images/projects/typed-settings.svg",
+    "author": { "@type": "Person", "name": "Subodh Khanal", "url": "https://prosubodh.github.io/" }
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../style.css">
+
+  <style>
+    .project-page { padding: 6rem 0 2.5rem; }
+    .back-link { display: inline-flex; align-items: center; gap: 0.35rem; font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted); text-decoration: none; margin-bottom: 2rem; transition: color 0.2s; }
+    .back-link:hover { color: var(--accent); }
+    .project-page h1 { font-size: clamp(2rem, 5vw, 3rem); line-height: 1.15; margin-bottom: 1rem; }
+    .project-tag { font-family: var(--font-mono); font-size: 0.85rem; font-weight: 400; color: var(--text-muted); white-space: nowrap; margin-left: 0.5rem; }
+    .project-lede { color: var(--text-secondary); font-size: 1.05rem; line-height: 1.8; max-width: 46rem; }
+    .project-actions { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1.75rem; }
+    .project-hero-img { display: block; width: 100%; max-height: 420px; object-fit: cover; border-radius: var(--radius); border: 1px solid var(--border); margin-bottom: 2rem; }
+    .project-body { display: grid; gap: 1.5rem; padding-bottom: 4rem; }
+    .project-body h2 { font-size: 1.5rem; margin-bottom: 1rem; }
+    .project-body p { color: var(--text-secondary); line-height: 1.85; }
+    .project-body .skills-grid { margin-top: 1.25rem; }
+  </style>
+<body>
+  <div class="bg-mesh"></div>
+  <div class="noise-overlay"></div>
+
+  <div class="resume-actions">
+    <div class="theme-dd" data-theme-dd>
+      <button class="theme-dd-btn" aria-haspopup="listbox" aria-expanded="false" aria-label="Theme">
+        <span class="theme-icon" aria-hidden="true"></span>
+      </button>
+      <ul class="theme-dd-menu" role="listbox" aria-label="Theme">
+        <li><button data-mode="system" role="option"><span class="dd-icon"></span>System</button></li>
+        <li><button data-mode="light" role="option"><span class="dd-icon"></span>Light</button></li>
+        <li><button data-mode="dark" role="option"><span class="dd-icon"></span>Dark</button></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="container">
+    <header class="project-page">
+      <a class="back-link" href="../index.html#projects">&larr; All projects</a>
+      <span class="eyebrow">Project</span>
+      <h1>typed-settings <span class="project-tag">npm &middot; JSR &middot; v0.1.4</span></h1>
+      <p class="project-lede">One-call typed config for TypeScript &mdash; env, files, YAML/TOML/JSON, and vault secrets validated into a frozen object.</p>
+      <div class="project-actions">
+        <a class="btn primary-btn" href="https://github.com/prosubodh/typed-settings" target="_blank" rel="noopener">View on GitHub</a>
+        <a class="btn secondary-btn" href="https://www.npmjs.com/package/typed-settings" target="_blank" rel="noopener">npm</a>
+        <a class="btn secondary-btn" href="https://jsr.io/@typed-settings/typed-settings" target="_blank" rel="noopener">JSR</a>
+      </div>
+    </header>
+
+    <img class="project-hero-img" src="../images/projects/typed-settings.svg" alt="typed-settings typed config preview" decoding="async">
+
+    <div class="project-body">
+      <section class="glass-card">
+        <span class="eyebrow">Overview</span>
+        <h2>About typed-settings</h2>
+        <p>One-call typed config for TypeScript. Reads env, <span style="font-family: var(--font-mono); font-size: 0.85em;">.env</span> files, YAML/TOML/JSON, secrets dirs and vault secrets, validates against your schema, and hands you a frozen object.</p>
+      </section>
+
+      <section class="glass-card">
+        <span class="eyebrow">Details</span>
+        <h2>Package details</h2>
+        <p>Published on npm and JSR (v0.1.4, MIT, Node 20+) with Standard Schema support (zod, valibot, arktype), legacy bridges (yup, joi, superstruct), <span style="font-family: var(--font-mono); font-size: 0.85em;">${VAR}</span> expansion, best-effort coercion, secret redaction, CLI (check/init/gen/watch), and Next.js / Vite / watch bindings. 309 tests, 100% coverage enforced.</p>
+        <span class="eyebrow" style="display: block; margin-top: 1.75rem;">Stack</span>
+        <div class="skills-grid">
+          <span class="skill-tag">npm</span><span class="skill-tag">JSR</span><span class="skill-tag">TypeScript</span><span class="skill-tag">Standard Schema</span><span class="skill-tag">Node.js</span>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <footer style="border: none;">
+    <div class="container" style="text-align: center; color: var(--text-secondary); font-size: 0.85rem;">
+      &copy; <span id="current-year"></span> Subodh Khanal. All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("current-year").textContent = new Date().getFullYear();
+
+    const themeIcons = { system: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>', light: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>', dark: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>' };
+
+    function applyTheme(mode) {
+      const isLight = mode === 'light' || (mode === 'system' && window.matchMedia('(prefers-color-scheme: light)').matches);
+      document.body.classList.toggle('light-theme', isLight);
+      localStorage.setItem('theme', mode);
+      document.querySelectorAll('.theme-icon').forEach(el => el.innerHTML = themeIcons[mode] || themeIcons.system);
+      document.querySelectorAll('[data-mode]').forEach(b => b.classList.toggle('selected', b.dataset.mode === mode));
+    }
+
+    applyTheme(localStorage.getItem('theme') || 'system');
+
+    document.querySelectorAll('.theme-dd [data-mode]').forEach(btn => {
+      btn.querySelector('.dd-icon').innerHTML = themeIcons[btn.dataset.mode];
+    });
+
+    document.querySelectorAll('[data-theme-dd]').forEach(dd => {
+      const btn = dd.querySelector('.theme-dd-btn');
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const open = dd.classList.toggle('open');
+        btn.setAttribute('aria-expanded', open);
+        document.querySelectorAll('[data-theme-dd]').forEach(o => { if (o !== dd) { o.classList.remove('open'); o.querySelector('.theme-dd-btn').setAttribute('aria-expanded','false'); } });
+      });
+    });
+
+    document.querySelectorAll('.theme-dd-menu [data-mode]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        applyTheme(btn.dataset.mode);
+        document.querySelectorAll('[data-theme-dd]').forEach(dd => { dd.classList.remove('open'); dd.querySelector('.theme-dd-btn').setAttribute('aria-expanded','false'); });
+      });
+    });
+
+    document.addEventListener('click', () => {
+      document.querySelectorAll('[data-theme-dd]').forEach(dd => { dd.classList.remove('open'); dd.querySelector('.theme-dd-btn').setAttribute('aria-expanded','false'); });
+    });
+
+    window.matchMedia('(prefers-color-scheme: light)').addEventListener('change', () => {
+      if ((localStorage.getItem('theme') || 'system') === 'system') applyTheme('system');
+    });
+  </script>
+</body>
+</html>

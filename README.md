@@ -9,6 +9,7 @@ Live at [prosubodh.github.io](https://prosubodh.github.io/) (GitHub Pages, serve
 | File | Description |
 |---|---|
 | `index.html` | Portfolio: hero, stats, about, career timeline, recommendations, projects, learning, services + rates, contact |
+| `projects/*.html` | Six project detail pages (image, overview, details, stack, external links); each project card opens its page |
 | `resume.html` | Printable resume with a Print / Save PDF action |
 | `404.html` | Themed not-found page (`noindex`) |
 | `style.css` | Single shared stylesheet, dark theme default with light theme via `light-theme` class |
